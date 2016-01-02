@@ -1,0 +1,690 @@
+JentiCrawler: processing 643 words from Wikizionario 
+ERRORS [0] WORD [insistere] TYPE [verbo] DEFINITION [continuare , proseguire con caparbietà nel fare qualcosa] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bambo)  
+ERRORS [2] WORD [sciocco] TYPE [aggettivo] DEFINITION [chi non ha giudizio] TAGS []  
+ERRORS [16] WORD [babbeo] TYPE [aggettivo] DEFINITION [persona capace di essere preda di offese o di raggiri senza accorgersene] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bamb)  
+ERRORS [1] WORD [babbo] TYPE [sostantivo] DEFINITION [padre] TAGS []  
+ERRORS [0] WORD [bimbo] TYPE [sostantivo] DEFINITION [bambino] TAGS []  
+ERRORS [5] WORD [neonato] TYPE [sostantivo] DEFINITION [bambino nato da poco tempo] TAGS []  
+ERRORS [0] WORD [neonato] TYPE [aggettivo] DEFINITION [che è nato da poco tempo] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/infante 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/beb%C3%A8)  
+ERRORS [0] WORD [lattante] TYPE [aggettivo] DEFINITION [di mammifero che succhia il latte dalla madre] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/poppante 
+ERRORS [3] WORD [baby] TYPE [sostantivo] DEFINITION [bambino (o bambina), anche appena nato] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/piccino)  
+ERRORS [11] WORD [piccolo] TYPE [sostantivo] DEFINITION [bambino di pochi anni] TAGS [(familiare)]  
+ERRORS [0] WORD [piccolo] TYPE [aggettivo] DEFINITION [di dimensioni contenute, non eccessivamente sviluppato in larghezza o in altezza] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/frugoletto 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/pupo)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/pargoletto)  
+ERRORS [0] WORD [pargolo] TYPE [sostantivo] DEFINITION [bambino , infante , fanciullo , persona di tenera età] TAGS []  
+ERRORS [12] WORD [innocente] TYPE [aggettivo] DEFINITION [che non è colpevole] TAGS [(diritto)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/fantolino)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/creatura 
+ERRORS [4] WORD [marmocchio] TYPE [sostantivo] DEFINITION [bambino] TAGS [(spregiativo)(scherzoso)]  
+ERRORS [6] WORD [bamboccio] TYPE [sostantivo] DEFINITION [bambino vispo e grassoccio] TAGS []  
+ERRORS [0] WORD [fanciullo] TYPE [sostantivo] DEFINITION [l' uomo nell'età compresa tra i sei e i dodici anni] TAGS []  
+ERRORS [0] WORD [ragazzino] TYPE [sostantivo] DEFINITION [diminutivo di ragazzo] TAGS []  
+ERRORS [0] WORD [ragazzetto] TYPE [sostantivo] DEFINITION [diminutivo di ragazzo] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/moccioso)  
+ERRORS [1] WORD [frugolo] TYPE [sostantivo] DEFINITION [bambino sveglio] TAGS []  
+ERRORS [8] WORD [infantile] TYPE [aggettivo] DEFINITION [che riguarda l' infanzia] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/giovanissimo)  
+ERRORS [12] WORD [giovane] TYPE [sostantivo] DEFINITION [persona nell'età della giovinezza , fra l' adolescenza e la maturità] TAGS []  
+ERRORS [5] WORD [giovane] TYPE [aggettivo] DEFINITION [che è nell'età della giovinezza] TAGS []  
+ERRORS [4] WORD [imberbe] TYPE [sostantivo] DEFINITION [giovane immaturo od inesperto] TAGS [(senso figurato)]  
+ERRORS [1] WORD [imberbe] TYPE [aggettivo] DEFINITION [liscio , senza barba per ragioni di crescita, di età] TAGS []  
+ERRORS [9] WORD [figlio] TYPE [sostantivo] DEFINITION [discendente diretto maschile , di un uomo e di una donna che lo ha concepito od adottato] TAGS []  
+ERRORS [22] WORD [ingenuo] TYPE [aggettivo] DEFINITION [che è senza furbizia] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/immaturo 
+ERRORS [1] WORD [inesperto] TYPE [aggettivo] DEFINITION [inexperienced , unskilled] TAGS []  
+ERRORS [7] WORD [candido] TYPE [aggettivo] DEFINITION [di un colore bianco puro , lucente , chiaro] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/emergente 
+ERRORS [12] WORD [nuovo] TYPE [aggettivo] DEFINITION [qualcosa mai visto prima] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/bambina 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bambinistico)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/prepubere)  
+ERRORS [1] WORD [femminile] TYPE [aggettivo] DEFINITION [relativo a qualcosa o qualcuno di genere femminile] TAGS []  
+ERRORS [0] WORD [genitore] TYPE [sostantivo] DEFINITION [uno dei due individui da cui una terza persona immediatamente discende, in senso biologico] TAGS []  
+ERRORS [5] WORD [madre] TYPE [sostantivo] DEFINITION [il genitore di sesso femminile di una persona] TAGS []  
+ERRORS [7] WORD [adulto] TYPE [sostantivo] DEFINITION [che ha superato l' adolescenza , uomo fatto, sviluppato , maturo] TAGS []  
+ERRORS [14] WORD [maturo] TYPE [sostantivo] DEFINITION [chi ha terminato gli studi di scuola media superiore lasciandosi dietro l' esame di maturità] TAGS [(scuola)(familiare)]  
+ERRORS [0] WORD [maturo] TYPE [aggettivo] DEFINITION [di frutto che è pronto per essere commestibile] TAGS [(botanica)]  
+ERRORS [3] WORD [esperto] TYPE [sostantivo] DEFINITION [individuo professionalmente perito in uno specifico ambito] TAGS []  
+ERRORS [0] WORD [esperto] TYPE [aggettivo] DEFINITION [che ha conoscenze specifiche in un ben delineato settore] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/navigato 
+ERRORS [38] WORD [vecchio] TYPE [sostantivo] DEFINITION [persona anziana] TAGS []  
+ERRORS [0] WORD [vecchio] TYPE [aggettivo] DEFINITION [di lunga età] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bambinetto)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bambinello)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/bambinone)  
+ERRORS [0] WORD [volto] TYPE [sostantivo] DEFINITION [viso umano, faccia , aspetto] TAGS []  
+ERRORS [1] WORD [volto] TYPE [aggettivo] DEFINITION [voltato , girato , diretto , rivolto ; indirizzato , piegato , inclinato , dedito] TAGS []  
+ERRORS [1] WORD [figure] TYPE [sostantivo] DEFINITION [come elemento araldico qualifica il volto visto di fronte, come quello che si trova sul sole e sulla luna araldici] TAGS [(araldica)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/stucco 
+ERRORS [6] WORD [imprevisto] TYPE [aggettivo] DEFINITION [che non è stato programmato] TAGS []  
+ERRORS [10] WORD [circostanza] TYPE [sostantivo] DEFINITION [situazione provvisoria] TAGS []  
+ERRORS [3] WORD [accidente] TYPE [sostantivo] DEFINITION [evento casuale o fortuito] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/combinazione)  
+ERRORS [4] WORD [coincidenza] TYPE [sostantivo] DEFINITION [quando all'arrivo di un treno , pulman o similari ad una stazione parte entro breve periodo un mezzo per un altra destinazione] TAGS []  
+ERRORS [1] WORD [congiuntura] TYPE [sostantivo] DEFINITION [punto di contatto e di collegamento di due o più cose tra loro] TAGS []  
+ERRORS [7] WORD [ipotesi] TYPE [sostantivo] DEFINITION [una premessa che si pone alla base di un ragionamento] TAGS []  
+ERRORS [12] WORD [possibilità] TYPE [sostantivo] DEFINITION [la caratteristica di ciò che può esistere , realizzarsi, avvenire] TAGS [(filosofia)(statistica)]  
+ERRORS [14] WORD [probabilità] TYPE [sostantivo] DEFINITION [condizione propria di ciò che è probabile] TAGS []  
+ERRORS [13] WORD [eventualità] TYPE [sostantivo] DEFINITION [possibilità di un evento di avvenire] TAGS [(filosofia)(statistica)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/evenienza)  
+ERRORS [7] WORD [esempio] TYPE [sostantivo] DEFINITION [un caso rappresentativo del gruppo o dell'insieme] TAGS []  
+ERRORS [9] WORD [fortuna] TYPE [sostantivo] DEFINITION [destino o sorte alterna] TAGS []  
+ERRORS [5] WORD [sorte] TYPE [sostantivo] DEFINITION [forza oscura e imprevedibile che, secondo alcune credenze, regolerebbe la vita degli umani] TAGS []  
+ERRORS [3] WORD [destino] TYPE [sostantivo] DEFINITION [il procedere degli avvenimenti considerato come qualcosa di prefissato da una forza che travalica la volontà umana] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/casualit%C3%A0)  
+ERRORS [5] WORD [fato] TYPE [sostantivo] DEFINITION [presso i greci, potenza arcana e incontrastabile, che disciplina il mondo e gli uomini] TAGS []  
+ERRORS [16] WORD [fatalità] TYPE [sostantivo] DEFINITION [evento imprevedibile] TAGS []  
+ERRORS [6] WORD [vicenda] TYPE [sostantivo] DEFINITION [l'avvicendarsi di qualcosa nel tempo] TAGS [(obsoleto)]  
+ERRORS [13] WORD [evento] TYPE [sostantivo] DEFINITION [avvenimento , fatto o cosa che diviene] TAGS [(filosofia)(diritto)(economia)(statistica)]  
+ERRORS [19] WORD [fatto] TYPE [sostantivo] DEFINITION [azione che è accaduta realmente] TAGS []  
+ERRORS [2] WORD [fatto] TYPE [aggettivo] DEFINITION [che è stato portato a compimento] TAGS []  
+ERRORS [12] WORD [episodio] TYPE [sostantivo] DEFINITION [parte di una narrazione che, anche se è estrapolata dal contesto , conserva la sua comprensibilità] TAGS []  
+ERRORS [14] WORD [occasione] TYPE [sostantivo] DEFINITION [ciò che permette a qualcuno di migliorare la propria vita] TAGS []  
+ERRORS [0] WORD [vicissitudine] TYPE [sostantivo] DEFINITION [riferimento a vicende poco gradite o dolorose] TAGS []  
+ERRORS [1] WORD [contingenza] TYPE [sostantivo] DEFINITION [fatto accidentale , occasionale o casuale] TAGS [(filosofia)]  
+ERRORS [2] WORD [problema] TYPE [sostantivo] DEFINITION [richiesta di soluzione di dati sconosciuti partendo da alcuni conosciuti] TAGS [(matematica)]  
+ERRORS [9] WORD [questione] TYPE [sostantivo] DEFINITION [difficoltà da superare con una soluzione] TAGS []  
+ERRORS [7] WORD [situazione] TYPE [sostantivo] DEFINITION [condizione , stato delle cose] TAGS [(filosofia)(diritto)(economia)(statistica)]  
+ERRORS [6] WORD [opportunità] TYPE [sostantivo] DEFINITION [possibilità favorevole] TAGS []  
+ERRORS [7] WORD [convenienza] TYPE [sostantivo] DEFINITION [corrispondenza di una cosa ad un'altra] TAGS []  
+ERRORS [5] WORD [processo] TYPE [sostantivo] DEFINITION [l'insieme delle attività e delle forme con le quali gli organi dello stato a ciò preposti esercitano, in preture o tribunali, il potere di condannare un individuo che ha violato la legge civile o penale] TAGS [(diritto)]  
+ERRORS [9] WORD [condizione] TYPE [sostantivo] DEFINITION [circostanza da cui dipende l'avverarsi di una situazione] TAGS [(diritto)]  
+ERRORS [2] WORD [casistica] TYPE [sostantivo] DEFINITION [elencazione ed analisi di una pluralità di fatti o a processi relativi a determinati settori] TAGS []  
+ERRORS [0] WORD [casuale] TYPE [aggettivo] DEFINITION [fatto avvenuto incidentalmente e per puro caso, e non per deliberata volontà] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/casualmente 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/casaccio)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/IPA 
+ERRORS [1] WORD [latino] TYPE [sostantivo] DEFINITION [facente parte delle tribù che abitavano nel Lazio all'epoca della fondazione di Roma] TAGS [(storia)]  
+ERRORS [0] WORD [latino] TYPE [aggettivo] DEFINITION [inerente all' antico Lazio o agli antichi romani] TAGS []  
+ERRORS [3] WORD [cosare] TYPE [verbo] DEFINITION [fare o agire in senso indeterminato ; spesso usato nella lingua parlata quando non si ricorda o non si conosce il verbo che esprime l' azione] TAGS [(familiare)]  
+ERRORS [4] WORD [ente] TYPE [sostantivo] DEFINITION [ciò che è ed esiste] TAGS [(filosofia)]  
+ERRORS [7] WORD [corpo] TYPE [sostantivo] DEFINITION [parte di materia formata da sostanze liquide, solide o gassose] TAGS [(fisica)]  
+ERRORS [11] WORD [oggetto] TYPE [sostantivo] DEFINITION [tutto ciò che il soggetto intende come diverso da se, ciò che sussiste di per se indipendentemente dalla conoscenza] TAGS []  
+ERRORS [1] WORD [oggetto] TYPE [aggettivo] DEFINITION [riferito a persona, che è considerato solo per il proprio aspetto fisico o la propria prestanza sessuale] TAGS [(spregiativo)]  
+ERRORS [24] WORD [azione] TYPE [sostantivo] DEFINITION [l' attitudine umana di cambiare la realtà per vari obiettivi] TAGS [(filosofia)]  
+ERRORS [29] WORD [atto] TYPE [sostantivo] DEFINITION [azione] TAGS []  
+ERRORS [0] WORD [atto] TYPE [aggettivo] DEFINITION [adeguato , adatto , volto a] TAGS []  
+ERRORS [18] WORD [opera] TYPE [sostantivo] DEFINITION [opera come espressione dell' ingegno o creatività umani, opera d'autore che è l'oggetto della proprietà tutelata dal copyright o diritto d'autore] TAGS [(diritto)(economia)]  
+ERRORS [5] WORD [avvenimento] TYPE [sostantivo] DEFINITION [evento , fatto o cosa che avviene] TAGS []  
+ERRORS [21] WORD [idea] TYPE [sostantivo] DEFINITION [rappresentazione di qualcosa che esiste soltanto nella mente] TAGS [(filosofia)]  
+ERRORS [17] WORD [essenza] TYPE [sostantivo] DEFINITION [ciò per cui una cosa è quello che è; la natura di un ente, ciò che gli appartiene necessariamente, non in modo accidentale.] TAGS [(filosofia)]  
+ERRORS [7] WORD [concetto] TYPE [sostantivo] DEFINITION [formulazione di una teoria che prende spunto da aspetti diversi e tangibili di uno stesso meccanismo] TAGS [(filosofia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/nozione)  
+ERRORS [4] WORD [frase] TYPE [sostantivo] DEFINITION [parte di un testo o di un discorso che, anche estrapolata e presa a sè stante, è comprensibile da chi la legge o la ascolta senza che questi ne conosca il contesto] TAGS [(grammatica)]  
+ERRORS [8] WORD [discorso] TYPE [sostantivo] DEFINITION [lo sviluppo orale , con compiutezza, pertinenza e preparazione, di un determinato argomento] TAGS []  
+ERRORS [5] WORD [dichiarazione] TYPE [sostantivo] DEFINITION [atto o effetto del dichiarare] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/contenuto 
+ERRORS [20] WORD [tema] TYPE [sostantivo] DEFINITION [argomento meritevole di approfondimento e dibattito , intorno al quale si sviluppano discorsi e ragionamenti] TAGS []  
+ERRORS [15] WORD [argomento] TYPE [sostantivo] DEFINITION [tutto quello che si porta in aiuto di un concetto] TAGS [(filosofia)]  
+ERRORS [28] WORD [causa] TYPE [sostantivo] DEFINITION [ciò che è origine, ragione, motivo determinante di qualcosa] TAGS []  
+ERRORS [13] WORD [motivo] TYPE [sostantivo] DEFINITION [la causa per cui si agisce] TAGS [(filosofia)(diritto)]  
+ERRORS [20] WORD [ragione] TYPE [sostantivo] DEFINITION [capacità di pensare] TAGS [(filosofia)(psicologia)]  
+ERRORS [18] WORD [scopo] TYPE [sostantivo] DEFINITION [intento a cui si mira] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/faccenda 
+ERRORS [19] WORD [affare] TYPE [sostantivo] DEFINITION [operazione che si presenti o si concluda in modo vantaggioso , o meno, per uno, o più partecipanti alla transazione (detta appunto transazione d'affari )] TAGS [(economia)(commercio)(finanza)(statistica)]  
+ERRORS [4] WORD [alimento] TYPE [sostantivo] DEFINITION [sostanza che può essere mangiata] TAGS [(gastronomia)]  
+ERRORS [3] WORD [cibo] TYPE [sostantivo] DEFINITION [alimento che viene ingerito dall' uomo o dall' animale] TAGS [(gastronomia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cosetta)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cosettina)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cosina)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cosuccia)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cosaccia)  
+ERRORS [5] WORD [corso] TYPE [sostantivo] DEFINITION [un abitante o nativo della Corsica] TAGS []  
+ERRORS [1] WORD [corso] TYPE [aggettivo] DEFINITION [relativo alla Corsica] TAGS []  
+ERRORS [17] WORD [classe] TYPE [sostantivo] DEFINITION [gruppo di persone che svolgono lo stesso mestiere e quindi hanno gli stessi interessi da difendere] TAGS [(sociologia)(diritto)(economia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/annetto)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/antiuomo)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/superuomo)  
+ERRORS [3] WORD [ominide] TYPE [sostantivo] DEFINITION [, progenitore dell' uomo] TAGS [(biologia)(zoologia)(mammalogia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ominino)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/omaccio)  
+ERRORS [0] WORD [omuncolo] TYPE [sostantivo] DEFINITION [piccolo uomo con il significato di compatimento] TAGS []  
+ERRORS [3] WORD [ometto] TYPE [sostantivo] DEFINITION [diminutivo di uomo , piccolo uomo] TAGS []  
+ERRORS [3] WORD [omino] TYPE [sostantivo] DEFINITION [uomo di piccola statura (con intonazione di simpatia ) o ad un bambino che ha già l' aspetto e i modi di un adulto] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/omone)  
+ERRORS [6] WORD [animale] TYPE [sostantivo] DEFINITION [essere vivente] TAGS [(biologia)(zoologia)]  
+ERRORS [0] WORD [animale] TYPE [aggettivo] DEFINITION [degli animali] TAGS []  
+ERRORS [12] WORD [errore] TYPE [sostantivo] DEFINITION [allontanamento dal vero] TAGS [(letteratura)(linguistica)(filosofia)]  
+ERRORS [1] WORD [ventiquattrore] TYPE [sostantivo] DEFINITION [lasso di tempo di ventiquattro ore] TAGS [(fisica)]  
+ERRORS [8] WORD [giornata] TYPE [sostantivo] DEFINITION [giorno , le ore di luce di un giorno fra l' alba e il tramonto , spesso in relazione ai fatti accaduti durante tale periodo , alle condizioni atmosferiche , alle attività e alle condizioni fisiche e mentali di chi lo trascorre] TAGS []  
+ERRORS [2] WORD [dì] TYPE [sostantivo] DEFINITION [giorno] TAGS [(letterario)]  
+ERRORS [10] WORD [festa] TYPE [sostantivo] DEFINITION [giorno di solennità religiosa o civile , che viene commemorato con cerimonie e/o riti particolari] TAGS [(sociologia)]  
+ERRORS [2] WORD [ricorrenza] TYPE [sostantivo] DEFINITION [riproposizione in modo ripetitivo nel tempo di un dato evento] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/celebrazione)  
+ERRORS [0] WORD [anniversario] TYPE [sostantivo] DEFINITION [ricorrenza annuale di un evento di una certa importanza] TAGS []  
+ERRORS [0] WORD [anniversario] TYPE [aggettivo] DEFINITION [annuale] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/festivit%C3%A0 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/solennit%C3%A0)  
+ERRORS [16] WORD [periodo] TYPE [sostantivo] DEFINITION [ammontare di tempo più o meno lungo] TAGS []  
+ERRORS [11] WORD [epoca] TYPE [sostantivo] DEFINITION [era , età , periodo a quell'epoca: in quel tempo] TAGS []  
+ERRORS [6] WORD [notte] TYPE [sostantivo] DEFINITION [periodo che segue il calar del sole e precede il suo sorgere contraddistinto dal venir meno della luce] TAGS [(astronomia)]  
+ERRORS [2] WORD [giornaliero] TYPE [sostantivo] DEFINITION [lavoratore ingaggiaato a giornata, soprattutto operaio o contadino] TAGS []  
+ERRORS [0] WORD [giornaliero] TYPE [aggettivo] DEFINITION [di ogni giorno , che viene svolto ogni giorno] TAGS []  
+ERRORS [3] WORD [giornale] TYPE [sostantivo] DEFINITION [pubblicazione giornaliera di notizie di attualità] TAGS []  
+ERRORS [2] WORD [aggiornare] TYPE [verbo] DEFINITION [rendere attuali documenti , libri, registri e anche conoscenze, stili di vita, tecniche] TAGS []  
+ERRORS [0] WORD [soggiornare] TYPE [verbo] DEFINITION [trascorrere un periodo di tempo di alcuni giorni in un determinato luogo] TAGS []  
+ERRORS [2] WORD [perdigiorno] TYPE [sostantivo] DEFINITION [persona oziosa] TAGS []  
+ERRORS [5] WORD [oggi] TYPE [sostantivo] DEFINITION [il giorno corrente] TAGS []  
+ERRORS [4] WORD [alba] TYPE [sostantivo] DEFINITION [momento, preceduto dall' aurora , in cui spunta il sole] TAGS [(astronomia)]  
+ERRORS [0] WORD [mattina] TYPE [sostantivo] DEFINITION [fase della giornata successiva all' alba che dura sino a mezzogiorno o fino all'ora di pranzo] TAGS []  
+ERRORS [2] WORD [pomeriggio] TYPE [sostantivo] DEFINITION [fase della giornata successiva al mezzogiorno , che dura sino al tramonto del sole] TAGS [(astronomia)]  
+ERRORS [10] WORD [tramonto] TYPE [sostantivo] DEFINITION [lo scomparire di un astro dietro l' orizzonte] TAGS [(astronomia)]  
+ERRORS [8] WORD [crepuscolo] TYPE [sostantivo] DEFINITION [luminosità del cielo a oriente prima del sorgere del Sole e a occidente dopo il tramonto] TAGS [(astronomia)]  
+ERRORS [11] WORD [sera] TYPE [sostantivo] DEFINITION [parte conclusiva della giornata compresa tra il tramonto del sole e l'inizio della notte] TAGS [(astronomia)]  
+ERRORS [18] WORD [giro] TYPE [sostantivo] DEFINITION [linea che delimita uno spazio circolare] TAGS [(geometria)]  
+ERRORS [4] WORD [svolta] TYPE [sostantivo] DEFINITION [grande novità] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/torsione)  
+ERRORS [12] WORD [direzione] TYPE [sostantivo] DEFINITION [punto verso cui è rivolta una persona o una cosa] TAGS []  
+ERRORS [15] WORD [verso] TYPE [sostantivo] DEFINITION [senso di orientamento di un vettore (cfr. direzione e intensità )] TAGS [(fisica)]  
+ERRORS [0] WORD [verso] TYPE [aggettivo] DEFINITION [voltato] TAGS []  
+ERRORS [8] WORD [fase] TYPE [sostantivo] DEFINITION [lasso di tempo in cui si muta qualcosa] TAGS []  
+ERRORS [12] WORD [turno] TYPE [sostantivo] DEFINITION [Avvicendarsi di diverse persone o gruppi nello svolgere una determinata azione alternandosi: aspetta che venga il tuo turno ; la farmacia di turno ; il turno serale ; è il turno dei giocatori bianchi ; la Juventus non ha superato il turno eliminatorio .] TAGS []  
+ERRORS [3] WORD [frequenza] TYPE [sostantivo] DEFINITION [il numero di volte in cui qualcosa succede] TAGS [(sociologia)(statistica)(fisica)(fisiologia)]  
+ERRORS [2] WORD [alternanza] TYPE [sostantivo] DEFINITION [successione in modo alterno , avvicendamento] TAGS []  
+ERRORS [12] WORD [arco] TYPE [sostantivo] DEFINITION [parte della circonferenza compresa tra due punti] TAGS [(geometria)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/arcata 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/voltone)  
+ERRORS [4] WORD [cupola] TYPE [sostantivo] DEFINITION [copertura simmetrica a calotta , di base circolare , ellittica o poligonale] TAGS [(architettura)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/volterrana)  
+ERRORS [3] WORD [copertura] TYPE [sostantivo] DEFINITION [riparo superiore di un edificio dagli agenti atmosferici e dagli animali] TAGS [(architettura)]  
+ERRORS [2] WORD [soffitto] TYPE [sostantivo] DEFINITION [limite superiore interno di una stanza] TAGS [(edilizia)(architettura)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/calotta)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ciello)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/voltata 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/girata 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/rivolgimento)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/rivoltamento)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/per 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/moltiplicato 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/voltarella)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/volticina)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/volticella)  
+ERRORS [12] WORD [edificio] TYPE [sostantivo] DEFINITION [qualunque tipo di costruzione , di grandezza variabile , destinata a vari scopi] TAGS [(edilizia)(ingegneria)(architettura)]  
+ERRORS [9] WORD [stabile] TYPE [aggettivo] DEFINITION [che dura con il tempo] TAGS [(senso figurato)]  
+ERRORS [9] WORD [costruzione] TYPE [sostantivo] DEFINITION [integrazione di vari manufatti in una sola struttura] TAGS [(tecnologia)(edilizia)(architettura)(ingegneria)]  
+ERRORS [7] WORD [fabbricato] TYPE [sostantivo] DEFINITION [grande costruzione muraria] TAGS [(edilizia)(architettura)(tecnologia)(ingegneria)]  
+ERRORS [1] WORD [fabbricato] TYPE [aggettivo] DEFINITION [murato] TAGS [(araldica)]  
+ERRORS [9] WORD [abitazione] TYPE [sostantivo] DEFINITION [casa dove si risiede] TAGS []  
+ERRORS [5] WORD [alloggio] TYPE [sostantivo] DEFINITION [luogo in cui si vive] TAGS []  
+ERRORS [4] WORD [appartamento] TYPE [sostantivo] DEFINITION [modo e atto dell' appartare] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/condominio 
+ERRORS [13] WORD [palazzo] TYPE [sostantivo] DEFINITION [edificio che può essere suddiviso in appartamenti , uffici o altri locali di ogni tipo di utilizzo, generalmente su più piani] TAGS [(edilizia)(ingegneria)(architettura)]  
+ERRORS [1] WORD [casamento] TYPE [sostantivo] DEFINITION [casa grande per più famiglie] TAGS [(architettura)]  
+ERRORS [3] WORD [palazzina] TYPE [sostantivo] DEFINITION [piccolo palazzo a più piani , a pianta centrale e senza cortile , destinato ad ospitare più famiglie] TAGS [(edilizia)(architettura)(ingegneria)]  
+ERRORS [1] WORD [villa] TYPE [sostantivo] DEFINITION [tipologia architettonica , un'ampia residenza circondata dal verde e generalmente collocata in campagna] TAGS [(architettura)]  
+ERRORS [2] WORD [villino] TYPE [sostantivo] DEFINITION [diminutivo di villa] TAGS []  
+ERRORS [1] WORD [villetta] TYPE [sostantivo] DEFINITION [diminutivo di villa] TAGS []  
+ERRORS [7] WORD [reggia] TYPE [sostantivo] DEFINITION [edificio o insieme di edifici recintati costruiti per la residenza o di un sovrano , generalmente attorniato da giardini] TAGS [(architettura)]  
+ERRORS [2] WORD [casale] TYPE [sostantivo] DEFINITION [Casa di campagna solitamente dotata di stalla e/o capanno degli attrezzi.] TAGS [(architettura)]  
+ERRORS [2] WORD [casolare] TYPE [sostantivo] DEFINITION [abitazione contadina fuori mano] TAGS [(edilizia)(architettura)]  
+ERRORS [0] WORD [casupola] TYPE [sostantivo] DEFINITION [casa piccola; abituro] TAGS []  
+ERRORS [0] WORD [chalet] TYPE [sostantivo] DEFINITION [piccola villa in legno con fondamenta in pietra e tetto molto pendente] TAGS [(architetura)]  
+ERRORS [1] WORD [cottage] TYPE [sostantivo] DEFINITION [villa rustica ma nell'insieme elegante] TAGS [(forestierismo)(architettura)]  
+ERRORS [0] WORD [baita] TYPE [sostantivo] DEFINITION [piccola abitazione di montagna , costruita interamente in legno o in pietra, utilizzata dai pastori o come ripostiglio] TAGS []  
+ERRORS [0] WORD [catapecchia] TYPE [sostantivo] DEFINITION [piccola casa fatiscente] TAGS []  
+ERRORS [7] WORD [tugurio] TYPE [sostantivo] DEFINITION [abitazione o locale in pessimo stato] TAGS []  
+ERRORS [0] WORD [stamberga] TYPE [sostantivo] DEFINITION [casa che va in rovina] TAGS []  
+ERRORS [2] WORD [tana] TYPE [sostantivo] DEFINITION [buco della terra in cui si riparano gli animali selvatici] TAGS []  
+ERRORS [1] WORD [covo] TYPE [sostantivo] DEFINITION [prima persona singolare dell'indicativo presente di covare] TAGS []  
+ERRORS [13] WORD [nido] TYPE [sostantivo] DEFINITION [ricovero di forma , grandezza e struttura varia, costruito dal nulla o attrezzato utilizzando cavità e ripari naturali dalla maggior parte degli uccelli o da particolari specie di pesci o mammiferi] TAGS []  
+ERRORS [7] WORD [domicilio] TYPE [sostantivo] DEFINITION [casa in cui si abita] TAGS []  
+ERRORS [9] WORD [residenza] TYPE [sostantivo] DEFINITION [l' edificio in cui opera un'istituzione] TAGS [(per estensione)(diritto)]  
+ERRORS [9] WORD [dimora] TYPE [sostantivo] DEFINITION [luogo nel quale una persona fisica giace occasionalmente] TAGS []  
+ERRORS [8] WORD [sede] TYPE [sostantivo] DEFINITION [luogo che può ospitare delle amministrazioni pubbliche , degli uffici , delle associazioni ecc.] TAGS []  
+ERRORS [2] WORD [focolare] TYPE [sostantivo] DEFINITION [sezione del camino ove si appicca il fuoco] TAGS []  
+ERRORS [10] WORD [tetto] TYPE [sostantivo] DEFINITION [copertura di un edificio] TAGS [(edilizia)(architettura)]  
+ERRORS [12] WORD [famiglia] TYPE [sostantivo] DEFINITION [complesso di individui legati da vincoli di sangue o da rapporto di parentela o affinità , che vivano insieme] TAGS [(sociologia)(antropologia)(diritto)]  
+ERRORS [3] WORD [casato] TYPE [sostantivo] DEFINITION [tutte le famiglie del medesimo stipite] TAGS []  
+ERRORS [10] WORD [stirpe] TYPE [sostantivo] DEFINITION [insieme di persone che discendono da un medesimo capostipite] TAGS [(per estensione)]  
+ERRORS [7] WORD [dinastia] TYPE [sostantivo] DEFINITION [casa regnante , famiglia di regnanti o signori] TAGS []  
+ERRORS [12] WORD [fabbrica] TYPE [sostantivo] DEFINITION [edificio munito di operai e macchinari per produrre beni industriali] TAGS [(economia)(tecnologia)(ingegneria)(architettura)]  
+ERRORS [3] WORD [ditta] TYPE [sostantivo] DEFINITION [azienda , impresa commerciale] TAGS [(diritto)(economia)]  
+ERRORS [12] WORD [azienda] TYPE [sostantivo] DEFINITION [organismo economico composto di persone e di beni rivolto al raggiungimento di un determinato scopo] TAGS []  
+ERRORS [12] WORD [impresa] TYPE [sostantivo] DEFINITION [azione , generalmente arrischiata o dall' esito imprevedibile] TAGS []  
+ERRORS [1] WORD [casella] TYPE [sostantivo] DEFINITION [sezione di un foglio frazionato in quadretti o in rettangoli] TAGS []  
+ERRORS [0] WORD [casalina] TYPE [sostantivo] DEFINITION [grezzo tessuto di cotone rigato, utilizzato specialmente come camici dalle donne durante il lavoro] TAGS [(tessile)]  
+ERRORS [3] WORD [casalinga] TYPE [sostantivo] DEFINITION [colei che svolge le faccende ed i mestieri di casa] TAGS [(professione)(diritto)(economia)]  
+ERRORS [1] WORD [casalinghità] TYPE [sostantivo] DEFINITION [propensione a vivere una vita tranquilla] TAGS []  
+ERRORS [0] WORD [casalinghitudine] TYPE [sostantivo] DEFINITION [propensione a vivere una vita tranquilla] TAGS []  
+ERRORS [2] WORD [casalingo] TYPE [aggettivo] DEFINITION [riguardante la casa o l'ambiente domestico] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/casalino)  
+ERRORS [2] WORD [casamatta] TYPE [sostantivo] DEFINITION [fortificazione per pezzi d' artiglieria , dotata di una o più cannoniere] TAGS [(militare)(architettura)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/casamobile)  
+ERRORS [10] WORD [casata] TYPE [sostantivo] DEFINITION [tutte le famiglie di una stirpe] TAGS []  
+ERRORS [2] WORD [casatico] TYPE [sostantivo] DEFINITION [tassa sugli immobili, che si pagava anticamente a Venezia, a Pisa e in altri posti] TAGS [(antico)(storia)]  
+ERRORS [1] WORD [casatorre] TYPE [sostantivo] DEFINITION [casa del medioevo molto alta, che sembra una torre] TAGS [(architettura)]  
+ERRORS [1] WORD [casone] TYPE [sostantivo] DEFINITION [costruzione tipica delle lagune del nord adriatico (come laguna di Marano e Grado, laguna di Venezia )] TAGS [(architettura)]  
+ERRORS [0] WORD [casina] TYPE [sostantivo] DEFINITION [diminutivo di casa] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/casetta 
+ERRORS [2] WORD [controparte] TYPE [sostantivo] DEFINITION [l'altro soggetto , rispetto al primo preso in considerazione, in una qualsiasi transazione o relazione connotata da reciproche prestazioni] TAGS [(diritto)]  
+ERRORS [1] WORD [partizione] TYPE [sostantivo] DEFINITION [suddivisione in varie parti] TAGS []  
+ERRORS [0] WORD [sanscrito] TYPE [sostantivo] DEFINITION [lingua indiana della famiglia indoeuropea] TAGS []  
+ERRORS [0] WORD [sanscrito] TYPE [aggettivo] DEFINITION [relativo alla lingua sanscrita] TAGS []  
+ERRORS [1] WORD [v] TYPE [sostantivo] DEFINITION [sigla che nella blasonatura in trick indica il colore verde] TAGS [(araldica)]  
+ERRORS [8] WORD [esistenza] TYPE [sostantivo] DEFINITION [lo stato di essere , esistere , essere presente] TAGS []  
+ERRORS [11] WORD [morte] TYPE [sostantivo] DEFINITION [cessazione della vita di un uomo , animale o pianta] TAGS [(biologia)(medicina)(diritto)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/vitale 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/vitaccia)  
+ERRORS [0] WORD [durata] TYPE [sostantivo] DEFINITION [unità di misura del tempo] TAGS []  
+ERRORS [3] WORD [istante] TYPE [sostantivo] DEFINITION [frazione di tempo di durata indefinita] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/lasso 
+ERRORS [11] WORD [intervallo] TYPE [sostantivo] DEFINITION [lasso di tempo che passa tra due attività] TAGS []  
+ERRORS [11] WORD [età] TYPE [sostantivo] DEFINITION [ognuno dei periodi di cui è composta la vita umana a cui corrispondono specifiche mutazioni biologiche] TAGS [(biologia)]  
+ERRORS [12] WORD [secolo] TYPE [sostantivo] DEFINITION [cento anni] TAGS [(astronomia)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/era 
+ERRORS [2] WORD [evo] TYPE [sostantivo] DEFINITION [ciascuno dei periodi della storia] TAGS [(storia)]  
+ERRORS [16] WORD [stadio] TYPE [sostantivo] DEFINITION [campo attrezzato ospitante competizioni sportive all'aperto e talvolta eventi musicali, composto da un campo di gioco centrale e spesso da piste da corsa, circondate da gradinate concentriche atte ad ospitare i numerosi spettatori oltre a varie altre strutture destinate ad atleti e organizzatori] TAGS [(sport)(architettura)]  
+ERRORS [2] WORD [gradino] TYPE [sostantivo] DEFINITION [dislivello tra due pavimenti contigui] TAGS [(architettura)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/data 
+ERRORS [19] WORD [termine] TYPE [sostantivo] DEFINITION [lemma] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ciclicit%C3%A0)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/intermittenza)  
+ERRORS [8] WORD [sequenza] TYPE [sostantivo] DEFINITION [serie organica di entità affini] TAGS []  
+ERRORS [8] WORD [stagione] TYPE [sostantivo] DEFINITION [la quarta parte di un anno contraddistinta dalla vicinanza o lontananza della Terra dal Sole] TAGS [(astronomia)]  
+ERRORS [5] WORD [clima] TYPE [sostantivo] DEFINITION [, il complesso delle condizioni atmosferiche di lungo periodo che influiscono sull' ambiente] TAGS [(geografia)(meteorologia)]  
+ERRORS [7] WORD [ritmo] TYPE [sostantivo] DEFINITION [successione ordinata di movimenti nel tempo] TAGS []  
+ERRORS [1] WORD [cadenza] TYPE [sostantivo] DEFINITION [andamento ritmico] TAGS []  
+ERRORS [17] WORD [movimento] TYPE [sostantivo] DEFINITION [spostamento di una persona o di un oggetto] TAGS [(fisica)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/contrattempo)  
+ERRORS [0] WORD [maltempo] TYPE [sostantivo] DEFINITION [fase perturbata prolungata per più giorni , in cui vengono registrati importanti accumuli piovosi. In tale situazione, la pressione atmosferica si presenta a livelli più bassi della norma, e spesso derivante da un profondo minimo in depressionario] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/anzitempo)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/nottetempo)  
+ERRORS [9] WORD [tempesta] TYPE [sostantivo] DEFINITION [travolgente concomitanza di vento e pioggia] TAGS [(meteorologia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/tempismo)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/tempistica)  
+ERRORS [18] WORD [temporale] TYPE [sostantivo] DEFINITION [fenomeno atmosferico locale di breve durata, caratterizzata da forti piogge , fulmini e tuoni] TAGS [(meteorologia)]  
+ERRORS [2] WORD [temporale] TYPE [aggettivo] DEFINITION [del o relativo al tempo] TAGS []  
+ERRORS [5] WORD [temporaneo] TYPE [aggettivo] DEFINITION [limitato nel tempo] TAGS []  
+ERRORS [0] WORD [contempo] TYPE [sostantivo] DEFINITION [sostantivo che assume un significato proprio solo nella locuzione "nel contempo" significa quindi "(nello) stesso tempo "] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/tempaccio)  
+ERRORS [8] WORD [femmina] TYPE [sostantivo] DEFINITION [persona o animale di sesso femminile] TAGS [(biologia)]  
+ERRORS [0] WORD [femmina] TYPE [aggettivo] DEFINITION [congegno forato nel quale se ne innesta un altro] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/signora 
+ERRORS [2] WORD [signorina] TYPE [sostantivo] DEFINITION [titolo di riguardo che viene dato a ogni donna nubile o minorenne , sempre premesso a nome, cognome, titolo professionale e titolo nobiliare] TAGS []  
+ERRORS [0] WORD [moglie] TYPE [sostantivo] DEFINITION [coniuge di sesso femminile nella coppia matrimoniale] TAGS []  
+ERRORS [1] WORD [sposa] TYPE [sostantivo] DEFINITION [donna nubile promessa in matrimonio ; fidanzata; donna che va a marito, mentre si preparano, avvengono e si festeggiano le nozze] TAGS []  
+ERRORS [5] WORD [coniuge] TYPE [sostantivo] DEFINITION [ciascuna delle due persone sposate, uomo e donna] TAGS []  
+ERRORS [1] WORD [consorte] TYPE [sostantivo] DEFINITION [ciascuno dei due coniugi , la moglie o il marito] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/convivente)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/concubina)  
+ERRORS [1] WORD [amante] TYPE [sostantivo] DEFINITION [indica, in una relazione extraconiugale] TAGS []  
+ERRORS [0] WORD [amante] TYPE [aggettivo] DEFINITION [che ama] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/compagna 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/fidanzata 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/innamorata 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/domestica 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/cameriera 
+ERRORS [4] WORD [colf] TYPE [sostantivo] DEFINITION [chi aiuta una famiglia nelle faccende di casa] TAGS [(professione)(diritto)(economia)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/governante 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/padrona)  
+ERRORS [2] WORD [dama] TYPE [sostantivo] DEFINITION [aristocratica , nobile] TAGS [(letterario)]  
+ERRORS [6] WORD [regina] TYPE [sostantivo] DEFINITION [monarca di sesso femminile o moglie di un re] TAGS [(storia)(politica)(diritto)]  
+ERRORS [16] WORD [maschio] TYPE [sostantivo] DEFINITION [persona di sesso maschile] TAGS [(biologia)]  
+ERRORS [1] WORD [maschio] TYPE [aggettivo] DEFINITION [concernente il sesso maschile] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/pupattola)  
+ERRORS [0] WORD [puerpera] TYPE [sostantivo] DEFINITION [donna che ha appena partorito e vive il periodo di puerperio] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/tartana)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/scarampana)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/demonia)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/amasca)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/tota)  
+ERRORS [3] WORD [zarina] TYPE [sostantivo] DEFINITION [titolo utilizzato per riferirsi alla consorte reale dello zar ; imperatrice di Russia] TAGS [(storia)]  
+ERRORS [10] WORD [fiera] TYPE [sostantivo] DEFINITION [raduno di venditori ambulanti e compratori che ha luogo periodicamente in una determinata località] TAGS [(economia)(commercio)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/matrona)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/virago)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ramba)  
+ERRORS [2] WORD [amanza] TYPE [sostantivo] DEFINITION [donna amata] TAGS [(antico)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/cecca)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ancella)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/angela)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/beatrice)  
+ERRORS [0] WORD [fata] TYPE [sostantivo] DEFINITION [meraviglioso essere fantastico dotato di poteri eccezionali utilizzati a fin di bene] TAGS []  
+ERRORS [0] WORD [lamia] TYPE [sostantivo] DEFINITION [nome di alcuni pesci di brutto aspetto] TAGS []  
+ERRORS [0] WORD [nutrice] TYPE [sostantivo] DEFINITION [donna che allatta un bambino, ma di cui non è la madre] TAGS []  
+ERRORS [1] WORD [musa] TYPE [sostantivo] DEFINITION [ognuna delle nove figlie di Zeus , che tutelavano il canto e la danza e le altre arti] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/pocofila)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/trecca)  
+ERRORS [26] WORD [vergine] TYPE [sostantivo] DEFINITION [giovane donna , giovinetta ; in origine il termine indicava una donna che non aveva ancora perso l' imene per mezzo di un rapporto sessuale] TAGS [(letterario)]  
+ERRORS [0] WORD [vergine] TYPE [aggettivo] DEFINITION [riferito ad una persona che non ha avuto un rapporto sessuale completo] TAGS [(sessualità)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/pollanca)  
+ERRORS [2] WORD [ragazza] TYPE [sostantivo] DEFINITION [giovane donna , adolescente] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/nobildonna)  
+ERRORS [2] WORD [donnaiolo] TYPE [sostantivo] DEFINITION [uomo particolarmente abile , incline o dedito a corteggiare le donne, in genere a prescindere da eventuali unioni coniugali sue o loro e con scarso scrupolo nei loro confronti] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnina)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnino)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnetta)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnicciola)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnicciuola)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnona)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnone)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnucola)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/donnaccia)  
+ERRORS [0] WORD [meretrice] TYPE [sostantivo] DEFINITION [la femmina dell'uomo che fornisce prestazioni sessuali per denaro] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ 
+ERRORS [5] WORD [palma] TYPE [sostantivo] DEFINITION [parte interna della mano] TAGS [(anatomia)]  
+ERRORS [1] WORD [palmo] TYPE [sostantivo] DEFINITION [unità di misura lunga pressapoco 25 centimetri] TAGS []  
+ERRORS [27] WORD [stile] TYPE [sostantivo] DEFINITION [complesso delle peculiarità formali che contraddistinguono un periodo artistico o storico] TAGS [(arte)(abbigliamento)(architettura)(tecnologia)]  
+ERRORS [5] WORD [impronta] TYPE [sostantivo] DEFINITION [segno di vario tipo e dimensione lasciato da un corpo su un altro corpo o in un luogo] TAGS []  
+ERRORS [20] WORD [maniera] TYPE [sostantivo] DEFINITION [forma in cui una cosa si palesa] TAGS []  
+ERRORS [11] WORD [strato] TYPE [sostantivo] DEFINITION [materiale steso su una superficie] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/passata 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/smazzata)  
+ERRORS [7] WORD [lato] TYPE [sostantivo] DEFINITION [parte destra o sinistra di un oggetto o qualsiasi altra cosa] TAGS []  
+ERRORS [0] WORD [lato] TYPE [aggettivo] DEFINITION [ampio, largo : tipicamente in senso lato del termine ovvero nell'accezione più ampia del termine] TAGS []  
+ERRORS [13] WORD [banda] TYPE [sostantivo] DEFINITION [contingente armato di irregolari volontari adibito ad azioni belliche o di guerriglia] TAGS [(militare)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/contromano)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manata)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manesco)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manetta)  
+ERRORS [0] WORD [manette] TYPE [sostantivo] DEFINITION [coppia di anelli , tenute insieme da una piccola catena , con cui la polizia chiude i polsi degli arrestati] TAGS []  
+ERRORS [8] WORD [manica] TYPE [sostantivo] DEFINITION [parte di un indumento , abito che copre totalmente o parzialmente il braccio] TAGS [(abbigliamento)]  
+ERRORS [0] WORD [manico] TYPE [sostantivo] DEFINITION [parte di una cosa adibita ad essere utilizzata o spostata con le mani] TAGS []  
+ERRORS [4] WORD [maniglia] TYPE [sostantivo] DEFINITION [strumento di varie forme e materiali che serve per aprire le porte , o per sollevare oggetti come un baule] TAGS []  
+ERRORS [1] WORD [manipolare] TYPE [verbo] DEFINITION [influenzare qualcuno] TAGS [(senso figurato)]  
+ERRORS [1] WORD [manipolo] TYPE [sostantivo] DEFINITION [gruppo , insieme , specialmente di persone, spesso utilizzato in ambito militare] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/mnovale)  
+ERRORS [1] WORD [smanettare] TYPE [verbo] DEFINITION [accelerare velocemente e ripetutamente] TAGS []  
+ERRORS [2] WORD [manufatto] TYPE [sostantivo] DEFINITION [oggetto o opera creato /a dall' uomo , a mano o con l'ausilio di attrezzi e di attrezzature] TAGS [(tecnologia)(ingegneria)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manomettere)  
+ERRORS [0] WORD [maniare] TYPE [verbo] DEFINITION [palpare , molestare toccando con mano] TAGS []  
+ERRORS [1] WORD [pollice] TYPE [sostantivo] DEFINITION [il primo dito della mano , l' unico opponibile rispetto alle altre dita] TAGS [(anatomia)]  
+ERRORS [4] WORD [indice] TYPE [sostantivo] DEFINITION [il secondo dito della mano , tra il pollice e il medio] TAGS [(anatomia)]  
+ERRORS [4] WORD [medio] TYPE [sostantivo] DEFINITION [il terzo dito della mano] TAGS [(anatomia)]  
+ERRORS [0] WORD [medio] TYPE [aggettivo] DEFINITION [centrale] TAGS []  
+ERRORS [1] WORD [anulare] TYPE [sostantivo] DEFINITION [il quarto dito della mano] TAGS [(anatomia)]  
+ERRORS [1] WORD [anulare] TYPE [aggettivo] DEFINITION [con la forma di un anello] TAGS []  
+ERRORS [1] WORD [mignolo] TYPE [sostantivo] DEFINITION [quinto dito della mano , il più piccolo ed esile] TAGS [(anatomia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manaccia)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manina)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/manona)  
+ERRORS [0] WORD [affabile] TYPE [aggettivo] DEFINITION [di individuo che si dimostra cortese , gentile , benigno] TAGS []  
+ERRORS [10] WORD [decisione] TYPE [sostantivo] DEFINITION [opzione esecutiva] TAGS [(sociologia)(psicologia)(politica)(diritto)(economia)]  
+ERRORS [5] WORD [sguardo] TYPE [sostantivo] DEFINITION [azione del guardare] TAGS []  
+ERRORS [15] WORD [vista] TYPE [sostantivo] DEFINITION [facoltà , senso del vedere, occhi] TAGS [(fisiologia)]  
+ERRORS [14] WORD [gusto] TYPE [sostantivo] DEFINITION [percezione dei sapori dei cibi] TAGS [(fisiologia)]  
+ERRORS [17] WORD [espressione] TYPE [sostantivo] DEFINITION [un particolare modo per comunicare agli altri il proprio pensiero e punto di vista.] TAGS []  
+ERRORS [10] WORD [atteggiamento] TYPE [sostantivo] DEFINITION [modo di porsi emotivamente e fisicamente davanti a situazioni o persone] TAGS [(psicologia)]  
+ERRORS [0] WORD [intuito] TYPE [sostantivo] DEFINITION [concetto astratto che indica la facoltà di comprendere con immediatezza] TAGS []  
+ERRORS [5] WORD [discernimento] TYPE [sostantivo] DEFINITION [facoltà della mente di giudicare , valutare , distinguere rettamente] TAGS []  
+ERRORS [0] WORD [fiuto] TYPE [sostantivo] DEFINITION [atto del fiutare , odore] TAGS []  
+ERRORS [1] WORD [naso] TYPE [sostantivo] DEFINITION [l'organo dell' olfatto che si trova sul viso ed anche sul muso di qualche animale] TAGS [(anatomia)]  
+ERRORS [9] WORD [attenzione] TYPE [sostantivo] DEFINITION [selezione, da parte della mente , dei contenuti dell’esperienza attuale o passata, che sono presentati alla coscienza per una elaborazione che li rende consapevoli] TAGS []  
+ERRORS [12] WORD [concentrazione] TYPE [sostantivo] DEFINITION [atto o effetto del concentrare o del concentrarsi] TAGS []  
+ERRORS [2] WORD [foro] TYPE [sostantivo] DEFINITION [piazza di superficie rettangolare , presso i romani era il luogo d'incontro della vita politica , religiosa, commerciale e sociale.] TAGS []  
+ERRORS [21] WORD [anello] TYPE [sostantivo] DEFINITION [cerchietto di metallo ( nobile o meno), da indossare al dito in qualità di ornamento] TAGS []  
+ERRORS [4] WORD [gemma] TYPE [sostantivo] DEFINITION [abbozzo di un germoglio , rivestito di squame , dal quale si svilupperà il fusto della pianta] TAGS [(botanica)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/adocchiare 
+ERRORS [0] WORD [occhiaia] TYPE [sostantivo] DEFINITION [ognuna delle due concavità del teschio dove sono collocati i globi dell'occhio] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/occhiaie 
+ERRORS [1] WORD [occhiale] TYPE [aggettivo] DEFINITION [dell' occhio] TAGS [(antico)]  
+ERRORS [0] WORD [occhiata] TYPE [sostantivo] DEFINITION [veloce sguardo] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/occhiare 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ciglia 
+ERRORS [5] WORD [cornea] TYPE [sostantivo] DEFINITION [lente a convessità anteriore che copre l' iride e il cristallino dell' occhio , permettendogli di ricevere le immagini] TAGS [(anatomia)]  
+ERRORS [18] WORD [cristallino] TYPE [sostantivo] DEFINITION [cristallo di Venezia del Quattrocento] TAGS []  
+ERRORS [0] WORD [cristallino] TYPE [aggettivo] DEFINITION [che ha la forma di cristallo] TAGS []  
+ERRORS [5] WORD [iride] TYPE [sostantivo] DEFINITION [membrana vascolare dell' occhio di colore variabile, con forma e funzione di diaframma , pigmentata , situata posteriormente alla cornea e davanti al cristallino , perforata dalla pupilla] TAGS [(anatomia)]  
+ERRORS [4] WORD [lacrima] TYPE [sostantivo] DEFINITION [goccia di umore acquoso secreta dalle ghiandole lacrimali dell' occhio al fine di lubrificare la cornea ; stilla in modo consistente dagli occhi specialmente in caso di forte dolore fisico, di irritazioni e infiammazioni oculari o di profonda commozione] TAGS []  
+ERRORS [2] WORD [pupilla] TYPE [sostantivo] DEFINITION [foro dell' occhio situato al centro dell' iride , che fa entrare la luce nel bulbo oculare] TAGS [(anatomia)]  
+ERRORS [1] WORD [retina] TYPE [sostantivo] DEFINITION [piccola rete che usano le donne per contenere l' acconciatura] TAGS []  
+ERRORS [1] WORD [sclera] TYPE [sostantivo] DEFINITION [la membrana più esterna del bulbo oculare , fibrosa , opaca e in parte visibile] TAGS [(anatomia)]  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/occhietto 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/occhiolino 
+ERRORS [1] WORD [spioncino] TYPE [sostantivo] DEFINITION [apparecchiatura cilindrica fornito di una lente e fissato in un minuscolo apertura della porta, che consente di guardare al'esterno senza essere visti] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/occhione 
+ERRORS [0] WORD [occhiaccio] TYPE [sostantivo] DEFINITION [peggiorativo di occhio] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/-occhio 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/impotenza 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/adesso 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/attualmente 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/dunque 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/pertanto 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ebbene 
+ERRORS [1] WORD [prima] TYPE [sostantivo] DEFINITION [prima uscita o visione di un' opera d'arte] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ieri 
+ERRORS [6] WORD [domani] TYPE [sostantivo] DEFINITION [il giorno seguente a quello di cui si parla o si scrive, l' indomani] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ormai 
+ERRORS [1] WORD [orario] TYPE [aggettivo] DEFINITION [concernente l' ora] TAGS []  
+ERRORS [6] WORD [orologio] TYPE [sostantivo] DEFINITION [dispositivo che misura il tempo e indica l' ora attuale, di solito almeno le ore e i minuti] TAGS [(tecnologia)]  
+ERRORS [16] WORD [minuto] TYPE [sostantivo] DEFINITION [la sessantesima parte di un' ora oppure l' intervallo di tempo che corrisponde a sessanta secondi] TAGS [(astronomia)(fisica)]  
+ERRORS [0] WORD [minuto] TYPE [aggettivo] DEFINITION [formato da da piccolissimi elementi] TAGS []  
+ERRORS [19] WORD [secondo] TYPE [sostantivo] DEFINITION [sessantesimo di un minuto nelle unità di misura di tempo] TAGS [(astronomia)(fisica)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/oretta)  
+ERRORS [13] WORD [padrone] TYPE [sostantivo] DEFINITION [chi possiede qualcosa] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/signorile)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/signor 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/signorino)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/signorotto)  
+ERRORS [4] WORD [territorio] TYPE [sostantivo] DEFINITION [grande estensione di terreno] TAGS [(geografia)(ecologia)]  
+ERRORS [10] WORD [terra] TYPE [sostantivo] DEFINITION [il luogo in cui si svolge la vita dell' uomo , in contrapposizione al cielo] TAGS [(astronomia)(geografia)(geologia)]  
+ERRORS [11] WORD [regione] TYPE [sostantivo] DEFINITION [territorio caratterizzato da fattori geografici omogenei: ambiente , morfologia , fauna , flora etc.] TAGS [(geografia)]  
+ERRORS [4] WORD [area] TYPE [sostantivo] DEFINITION [spazio limitato di terra] TAGS []  
+ERRORS [11] WORD [zona] TYPE [sostantivo] DEFINITION [cintura , fascia] TAGS []  
+ERRORS [7] WORD [plaga] TYPE [sostantivo] DEFINITION [estensione di territorio immensa e remota] TAGS [(uso letterario)]  
+ERRORS [0] WORD [landa] TYPE [sostantivo] DEFINITION [terra , luogo , posto] TAGS []  
+ERRORS [7] WORD [popolo] TYPE [sostantivo] DEFINITION [insieme di persone che vivono nella stessa zona o città] TAGS []  
+ERRORS [8] WORD [patria] TYPE [sostantivo] DEFINITION [terra natia di un popolo , a cui una persona sente di appartenere] TAGS [(geografia)(antropologia)(politica)]  
+ERRORS [0] WORD [madrepatria] TYPE [sostantivo] DEFINITION [paese di origine di una persona, prodotto o cosa. È un termine usato anche per indicare il paese colonizzatore.] TAGS []  
+ERRORS [6] WORD [villaggio] TYPE [sostantivo] DEFINITION [centro abitato di modeste dimensioni] TAGS [(antropologia)(architettura)(geografia)]  
+ERRORS [4] WORD [borgo] TYPE [sostantivo] DEFINITION [piccolo centro abitato] TAGS [(geografia)(architettura)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paesino)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paesucolo)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paesastro)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paesaccio)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paesone)  
+ERRORS [6] WORD [attimo] TYPE [sostantivo] DEFINITION [spazio brevissimo di tempo] TAGS []  
+ERRORS [10] WORD [lampo] TYPE [sostantivo] DEFINITION [fenomeno atmosferico prodotto da una scarica elettrica che provoca un bagliore] TAGS []  
+ERRORS [0] WORD [lampo] TYPE [aggettivo] DEFINITION [di evento molto rapido] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/baleno 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/momentino)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/momentaccio)  
+ERRORS [5] WORD [pulito] TYPE [aggettivo] DEFINITION [privo di sporco] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/lavato 
+ERRORS [21] WORD [puro] TYPE [aggettivo] DEFINITION [privo di contaminazione alcuna] TAGS []  
+ERRORS [17] WORD [lindo] TYPE [aggettivo] DEFINITION [assolutamente pulito] TAGS []  
+ERRORS [1] WORD [pelato] TYPE [sostantivo] DEFINITION [chi è senza capelli] TAGS [(familiare)]  
+ERRORS [0] WORD [pelato] TYPE [aggettivo] DEFINITION [che è senza capelli] TAGS []  
+ERRORS [0] WORD [sbucciato] TYPE [aggettivo] DEFINITION [Che non ha buccia, rivestimento, a causa di un intervento esterno. Quel melone è sbucciato] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/mondato 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/ripulito 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/sfrondato 
+ERRORS [13] WORD [immacolato] TYPE [aggettivo] DEFINITION [non macchiato , perfettamente pulito] TAGS []  
+ERRORS [16] WORD [incontaminato] TYPE [aggettivo] DEFINITION [privo di qualsiasi sporcizia fisica o morale] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/purificato 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/redento)  
+ERRORS [19] WORD [netto] TYPE [aggettivo] DEFINITION [integro , giusto] TAGS []  
+ERRORS [6] WORD [terso] TYPE [aggettivo] DEFINITION [privo della benché minima macchia o impurità] TAGS []  
+ERRORS [8] WORD [ordinato] TYPE [aggettivo] DEFINITION [posizionato secondo precise regole] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/limpido)  
+ERRORS [6] WORD [chiaro] TYPE [aggettivo] DEFINITION [di colore che si avvicina al bianco] TAGS []  
+ERRORS [27] WORD [trasparente] TYPE [aggettivo] DEFINITION [(di persona) chi dimostra lealtà e sincerità] TAGS [(senso figurato)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/incorrotto)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/sgusciato 
+ERRORS [7] WORD [universo] TYPE [sostantivo] DEFINITION [l'insieme dei corpi celesti e lo spazio dove essi sono situati] TAGS [(astronomia)]  
+ERRORS [2] WORD [creato] TYPE [sostantivo] DEFINITION [il risultato della creazione divina] TAGS [(religione)]  
+ERRORS [0] WORD [creato] TYPE [aggettivo] DEFINITION [plasmato dal nulla] TAGS []  
+ERRORS [1] WORD [cosmo] TYPE [sostantivo] DEFINITION [termine usato dai greci per indicare l' universo , cioè l'insieme dei corpi celesti e il continuum spaziotemporale in cui essi sono contenuti] TAGS [(astronomia)]  
+ERRORS [4] WORD [astro] TYPE [sostantivo] DEFINITION [corpo celeste dotato di luce propria o riflessa] TAGS [(astronomia)]  
+ERRORS [7] WORD [pianeta] TYPE [sostantivo] DEFINITION [, , indumento liturgico simile ad un mantello, ricamato avanti e dietro con una croce, di colore mutevole secondo la liturgia, che il celebrante si mette addosso sopra la veste bianca durante la celebrazione della Messa e nelle processioni] TAGS [(religione)(cristianesimo)(abbigliamento)]  
+ERRORS [5] WORD [società] TYPE [sostantivo] DEFINITION [comunità di esseri umani] TAGS [(sociologia)(antropologia)]  
+ERRORS [2] WORD [umanità] TYPE [sostantivo] DEFINITION [Sentimento etico di rispetto della specie umana in tutte le sue forme: l'infanzia, la giovinezza, la vecchiaia; e in tutti i suoi stati: la maternità, il dolore, etc. Mostrare umanità può voler dire quindi di aver rispetto della figura umana e di appartenere alla specie umana nello stesso tempo, dato che i sostantivi che delineano questi due concetti, il sentimento appunto e la specie, sono identici. L'umanità, o humanitas , è il corrispettivo etico della religiosa pietà , dove se nella seconda il timore ed il rispetto vengono imposti dall'alto da un ente supremo che ne esige direttamente o indirettamente l'osservanza, nella prima non vi è timore ma comprensione di un altro che è identico a noi, rispetto dell'altro contemporaneo al rispetto per noi stessi. Un proseguo, potremmo dire, del sentimento di pietas dell'antichità precristiana, della divinità preposta al sentimento medesimo.] TAGS []  
+ERRORS [1] WORD [mondanità] TYPE [sostantivo] DEFINITION [predilezione per il divertimento e l' eleganza] TAGS [(sociologia)]  
+ERRORS [10] WORD [cultura] TYPE [sostantivo] DEFINITION [complesso di nozioni che contribuiscono a plasmare il carattere e ad affinare le attitudini cognitive di un individuo] TAGS [(letteratura)(antropologia)(sociologia)(arte)]  
+ERRORS [13] WORD [civiltà] TYPE [sostantivo] DEFINITION [l'insieme degli aspetti culturali e di organizzazione politica e sociale di una popolazione , specialmente antica; anche non legata a una popolazione, ma a uno specifico tipo di organizzazione.] TAGS [(antropologia)]  
+ERRORS [16] WORD [ambiente] TYPE [sostantivo] DEFINITION [area o luogo delimitato o chiuso] TAGS []  
+ERRORS [13] WORD [ambito] TYPE [sostantivo] DEFINITION [spazio delimitato in cui si compie un' azione] TAGS []  
+ERRORS [0] WORD [ambito] TYPE [aggettivo] DEFINITION [che è grandemente desiderato] TAGS []  
+ERRORS [16] WORD [sfera] TYPE [sostantivo] DEFINITION [solido geometrico generato dalla rotazione di un semicerchio intorno al proprio diametro e costituito dai punti dello spazio che sono ad una distanza fissata ( raggio ) da un punto dato, detto centro della sfera] TAGS [(geometria)]  
+ERRORS [10] WORD [cerchia] TYPE [sostantivo] DEFINITION [insieme di individui aventi interessi comuni] TAGS [(senso figurato)]  
+ERRORS [4] WORD [marea] TYPE [sostantivo] DEFINITION [, alterno innalzamento ed abbassamento regolare del livello del mare causato soprattutto dalla Luna ma anche dal Sole] TAGS [(geografia)(astronomia)]  
+ERRORS [6] WORD [monte] TYPE [sostantivo] DEFINITION [rilievo della superficie terrestre di origine tettonica , talvolta roccioso, che si eleva oltre i 600 metri sul livello del mare, isolato o, più frequentemente, accostato ad altri rilievi] TAGS [(geografia)]  
+ERRORS [7] WORD [sacco] TYPE [sostantivo] DEFINITION [contenitore di tessuto scabro , carta o plastica , di conformazione rettangolare e aperto nella parte superiore, in cui si mettono o si trasportano cose] TAGS []  
+ERRORS [2] WORD [settimana] TYPE [sostantivo] DEFINITION [ognuno dei 52 periodi di sette giorni nel quale è ripartito un anno : nei calendari cristiani inizia lunedì e finisce domenica] TAGS [(astronomia)]  
+ERRORS [7] WORD [campana] TYPE [sostantivo] DEFINITION [strumento musicale solitamente in bronzo usato come richiamo o per scandire il tempo nelle chiese cristiane] TAGS [(musica)]  
+ERRORS [10] WORD [ceto] TYPE [sostantivo] DEFINITION [gruppo di persone che si comportano in maniera simile perché fanno riferimento allo stesso sistema di valori] TAGS [(sociologia)(diritto)(economia)]  
+ERRORS [23] WORD [gruppo] TYPE [sostantivo] DEFINITION [serie di individui od oggetti distinti ma raggruppati secondo precisi criteri] TAGS []  
+ERRORS [7] WORD [sporco] TYPE [aggettivo] DEFINITION [sostanza o materia che aderendo alla superficie di un oggetto ne degrada l' aspetto e funzionalità] TAGS []  
+ERRORS [4] WORD [sudicio] TYPE [sostantivo] DEFINITION [la zona sporca di un luogo] TAGS []  
+ERRORS [0] WORD [sudicio] TYPE [aggettivo] DEFINITION [molto sporco] TAGS []  
+ERRORS [2] WORD [sozzo] TYPE [aggettivo] DEFINITION [sporco in maniera disdicevole] TAGS []  
+ERRORS [3] WORD [impuro] TYPE [aggettivo] DEFINITION [che non è puro] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/immondo 
+ERRORS [0] WORD [lercio] TYPE [aggettivo] DEFINITION [molto sporco] TAGS []  
+ERRORS [3] WORD [lordo] TYPE [sostantivo] DEFINITION [oggetto su cui non sono state effettuate delle detrazioni] TAGS [(economia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/torbido)  
+ERRORS [1] WORD [corrotto] TYPE [aggettivo] DEFINITION [abbandonato al vizio , al male] TAGS []  
+ERRORS [2] WORD [spiritualità] TYPE [sostantivo] DEFINITION [tendenza ad attribuire allo spirito la guida della propria esistenza] TAGS [(filosofia)(religione)]  
+ERRORS [10] WORD [mondano] TYPE [aggettivo] DEFINITION [del mondo, della vita terrena] TAGS []  
+ERRORS [2] WORD [mondiale] TYPE [sostantivo] DEFINITION [competizione sportiva internazionale] TAGS [(sport)]  
+ERRORS [3] WORD [mondiale] TYPE [aggettivo] DEFINITION [del o relativo al mondo] TAGS [(geografia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/mondaccio)  
+ERRORS [4] WORD [nascere] TYPE [verbo] DEFINITION [venire alla luce] TAGS []  
+ERRORS [2] WORD [vocabolo] TYPE [sostantivo] DEFINITION [parola , suono complesso e completo che, come elemento del lessico , ha un significato specifico in una determinata lingua , una forma ed una scrittura definita] TAGS [(linguistica)]  
+ERRORS [13] WORD [voce] TYPE [sostantivo] DEFINITION [il suono umano prodotto dalla laringe , dove hanno sede le corde vocali] TAGS [(fisiologia)]  
+ERRORS [9] WORD [lemma] TYPE [sostantivo] DEFINITION [proposizione assunta per vera nella dimostrazione di un teorema ; generalmente è dimostrata precedentemente al teorema stesso] TAGS [(matematica)]  
+ERRORS [6] WORD [definizione] TYPE [sostantivo] DEFINITION [operazione logica consistente: nell'individuazione e nell' illustrazione delle proprietà essenziali di un determinato oggetto, materiale o immateriale, oppure in una equivalenza tra un termine e il significato del termine stesso. Tali definizioni, pur non essendo equivalenti, non si escludono a vicenda.] TAGS []  
+ERRORS [5] WORD [verbo] TYPE [sostantivo] DEFINITION [parola] TAGS [(letteralmente)]  
+ERRORS [6] WORD [detto] TYPE [sostantivo] DEFINITION [conciso aforisma] TAGS []  
+ERRORS [4] WORD [motto] TYPE [sostantivo] DEFINITION [frase tipica, affermazione ricorrente di una persona] TAGS []  
+ERRORS [14] WORD [massima] TYPE [sostantivo] DEFINITION [principio al quale ci si attiene come norma dell'agire; regola soggettiva o generale di condotta: è una buona massima fare affidamento solo sulle proprie forze | in linea di massima, in generale | progetto di massima, progetto preliminare di costruzioni edilizie e meccaniche, non ancora definito nei particolari (si contrappone a progetto esecutivo)] TAGS []  
+ERRORS [13] WORD [sentenza] TYPE [sostantivo] DEFINITION [giudizio espresso da un giudice in un processo che può essere di assoluzione o di condanna] TAGS [(diritto)]  
+ERRORS [11] WORD [ragionamento] TYPE [sostantivo] DEFINITION [azione e risultato del ragionare] TAGS []  
+ERRORS [6] WORD [dottrina] TYPE [sostantivo] DEFINITION [insieme di concetti e teorie di un ramo del sapere che vengono appresi mediante lo studio] TAGS [(filosofia)]  
+ERRORS [10] WORD [insegnamento] TYPE [sostantivo] DEFINITION [l'azione di insegnare] TAGS [(scuola)]  
+ERRORS [17] WORD [consiglio] TYPE [sostantivo] DEFINITION [parere dato da una persona a un'altra che è in diffcoltà o in dubbio per aiutarla] TAGS []  
+ERRORS [5] WORD [regola] TYPE [sostantivo] DEFINITION [riferimento normativo dell'agire, indotto dalla reale o presunta costanza dei fenomeni] TAGS []  
+ERRORS [1] WORD [comandamento] TYPE [sostantivo] DEFINITION [ordine ricevuto da Dio] TAGS [(religione)]  
+ERRORS [7] WORD [precetto] TYPE [sostantivo] DEFINITION [norma che prescrive comportamenti] TAGS [(diritto)]  
+ERRORS [10] WORD [linguaggio] TYPE [sostantivo] DEFINITION [facoltà umana di espressione e comunicazione tramite segni vocali] TAGS [(linguistica)]  
+ERRORS [0] WORD [dizione] TYPE [sostantivo] DEFINITION [modo di dire , proverbio , locuzione , citazione] TAGS []  
+ERRORS [1] WORD [eloquenza] TYPE [sostantivo] DEFINITION [il parlare bene] TAGS []  
+ERRORS [10] WORD [cenno] TYPE [sostantivo] DEFINITION [quasi impercettibile gesto di comunicazione tramite il corpo] TAGS []  
+ERRORS [0] WORD [menzione] TYPE [sostantivo] DEFINITION [ricordo , citazione , cenno di cosa o di persona in un discorso o in uno scritto] TAGS []  
+ERRORS [6] WORD [ordine] TYPE [sostantivo] DEFINITION [disposizione non casuale di oggetti o idee] TAGS []  
+ERRORS [8] WORD [ordinanza] TYPE [sostantivo] DEFINITION [delibera emessa da un sindaco , da un prefetto o da un ministro] TAGS [(diritto)]  
+ERRORS [3] WORD [dire] TYPE [verbo] DEFINITION [esternare ciò che si pensa parlando] TAGS []  
+ERRORS [0] WORD [dire] TYPE [aggettivo] DEFINITION [sinistro , terribile , molto grave] TAGS []  
+ERRORS [11] WORD [affermazione] TYPE [sostantivo] DEFINITION [dichiarazione] TAGS []  
+ERRORS [18] WORD [direttiva] TYPE [sostantivo] DEFINITION [obbligo a raggiungere un determinato risultato] TAGS [(diritto)]  
+ERRORS [3] WORD [favella] TYPE [sostantivo] DEFINITION [capacità di esprimersi con parole] TAGS []  
+ERRORS [4] WORD [oratoria] TYPE [sostantivo] DEFINITION [arte e tecnica del parlare in pubblico: ha una certa oratoria] TAGS [(letteratura)(linguistica)(storia)(filosofia)]  
+ERRORS [24] WORD [impegno] TYPE [sostantivo] DEFINITION [intento assiduo e profondo] TAGS []  
+ERRORS [11] WORD [promessa] TYPE [sostantivo] DEFINITION [impegno a fare (o non fare) qualcosa] TAGS []  
+ERRORS [10] WORD [assicurazione] TYPE [sostantivo] DEFINITION [atto ed effetto dell' assicurare] TAGS []  
+ERRORS [5] WORD [garanzia] TYPE [sostantivo] DEFINITION [qualsiasi mezzo diretto a garantire l' adempimento di una obbligazione o il godimento di un diritto] TAGS []  
+ERRORS [6] WORD [accenno] TYPE [sostantivo] DEFINITION [dare un cenno , un indizio di qualcosa che accadrà] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/chiacchiere 
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/ciance)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/frottole)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/fandonie)  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/paroliere)  
+ERRORS [1] WORD [paroletta] TYPE [sostantivo] DEFINITION [diminutivo di parola] TAGS []  
+ERRORS [1] WORD [parolina] TYPE [sostantivo] DEFINITION [diminutivo di parola] TAGS []  
+ERRORS [1] WORD [parolona] TYPE [sostantivo] DEFINITION [parola lunga o complicata che parolona�! nella spiegazione ha usato quella parolona...] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/parolone 
+ERRORS [3] WORD [parolaccia] TYPE [sostantivo] DEFINITION [peggiorativo di parola] TAGS []  
+ERRORS [3] WORD [papà] TYPE [sostantivo] DEFINITION [termine affettuoso per riferirsi al genitore di sesso maschile] TAGS []  
+ERRORS [2] WORD [padrino] TYPE [sostantivo] DEFINITION [Colui che al battesimo e alla cresima fa le veci del padre] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/patrigno)  
+ERRORS [4] WORD [suocero] TYPE [sostantivo] DEFINITION [il padre del coniuge] TAGS []  
+ERRORS [0] WORD [alcuno] TYPE [aggettivo] DEFINITION [qualche , certo] TAGS []  
+ERRORS [1] WORD [nessuno] TYPE [sostantivo] DEFINITION [individuo tenuto in poca considerazione] TAGS []  
+ERRORS [0] WORD [nessuno] TYPE [aggettivo] DEFINITION [neanche uno] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/affatto 
+ERRORS [34] WORD [segno] TYPE [sostantivo] DEFINITION [la conseguenza visibile dello sfregamento di due oggetti] TAGS []  
+ERRORS [15] WORD [macchia] TYPE [sostantivo] DEFINITION [screzio di sporco o di colore di qualunque forma o dimensione] TAGS []  
+ERRORS [25] WORD [luogo] TYPE [sostantivo] DEFINITION [porzione di spazio reale o astratta] TAGS []  
+ERRORS [18] WORD [posto] TYPE [sostantivo] DEFINITION [luogo geografico delimitato artificialmente , naturalmente o solo idealmente] TAGS []  
+ERRORS [1] WORD [posto] TYPE [aggettivo] DEFINITION [attributo araldico che si applica a:] TAGS [(araldica)]  
+ERRORS [6] WORD [base] TYPE [sostantivo] DEFINITION [sostegno su cui posa statua , colonna , pilastro e similari] TAGS [(architettura)]  
+ERRORS [6] WORD [posizione] TYPE [sostantivo] DEFINITION [correlazione tra un individuo od un oggetto ed il luogo ove si possono reperire] TAGS []  
+ERRORS [1] WORD [sito] TYPE [sostantivo] DEFINITION [luogo , posto] TAGS []  
+ERRORS [0] WORD [sito] TYPE [aggettivo] DEFINITION [situato , posto , locato] TAGS []  
+ERRORS [0] WORD [ubicazione] TYPE [sostantivo] DEFINITION [posizione topografica di un edificio, di un fondo] TAGS [(topografia)]  
+ERRORS [23] WORD [passo] TYPE [sostantivo] DEFINITION [movimento dei piedi in avanti o all' indietro] TAGS []  
+ERRORS [0] WORD [passo] TYPE [aggettivo] DEFINITION [che è appassito] TAGS []  
+ERRORS [15] WORD [brano] TYPE [sostantivo] DEFINITION [pezzo strappato a forza, di carne o di stoffa] TAGS []  
+ERRORS [13] WORD [voto] TYPE [sostantivo] DEFINITION [scelta espressa in un' elezione di una persona per un incarico] TAGS [(politica)(diritto)]  
+ERRORS [0] WORD [voto] TYPE [aggettivo] DEFINITION [forma antica per vuoto , vuotato] TAGS []  
+ERRORS [9] WORD [votazione] TYPE [sostantivo] DEFINITION [compimento dell'azione di esprimere una volontà e le operazioni connesse da chi è ammesso per legge o consuetudine ad approvare una decisione o eleggere dei rappresentati, risultato del votare .] TAGS [(politica)(diritto)]  
+ERRORS [9] WORD [punteggio] TYPE [sostantivo] DEFINITION [totale dei punti realizzati durante una gara o un concorso in genere] TAGS [(sport)]  
+ERRORS [12] WORD [valutazione] TYPE [sostantivo] DEFINITION [determinazione di un valore] TAGS [(diritto)(economia)(tecnologia)(medicina)(scuola)]  
+ERRORS [20] WORD [grado] TYPE [sostantivo] DEFINITION [parte di una scala di livelli o di una progressione grado militare] TAGS []  
+ERRORS [28] WORD [principio] TYPE [sostantivo] DEFINITION [la fase iniziale di qualcuno/qualcosa] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/nodo 
+ERRORS [6] WORD [nocciolo] TYPE [sostantivo] DEFINITION [pianta da frutto cespugliosa che fornisce le nocciole . Nome botanico: Corylus avellana.] TAGS [(botanica)]  
+ERRORS [1] WORD [cucitura] TYPE [sostantivo] DEFINITION [il cucire] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/rammendo 
+ERRORS [19] WORD [limite] TYPE [sostantivo] DEFINITION [confine] TAGS [(geografia)]  
+ERRORS [0] WORD [gradazione] TYPE [sostantivo] DEFINITION [passaggio per gradi] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/tonalit%C3%A0 
+ERRORS [1] WORD [sfumatura] TYPE [sostantivo] DEFINITION [passaggio graduale da un tono di colore a un altro; tonalità di un medesimo colore; gradazione] TAGS [(pittura)]  
+ERRORS [4] WORD [molto] TYPE [aggettivo] DEFINITION [grande per quantità , molto abbondante o numeroso] TAGS []  
+ERRORS [6] WORD [tanto] TYPE [aggettivo] DEFINITION [molto grande] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/assai 
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/puntino 
+ERRORS [22] WORD [fatica] TYPE [sostantivo] DEFINITION [sforzo fisico o mentale compiuto nell' attuazione di un lavoro o di un'altra attività , che porta alla diminuzione progressiva della resistenza fisica] TAGS []  
+ERRORS [24] WORD [attività] TYPE [sostantivo] DEFINITION [caratteristica, condizione di chi o di ciò che è attivo] TAGS [(fisica)(chimica)]  
+ERRORS [20] WORD [compito] TYPE [sostantivo] DEFINITION [ripartizione di un lavoro che si affida a qualcuno o che ci si stabilisce di compiere] TAGS [(diritto)(economia)]  
+ERRORS [0] WORD [compito] TYPE [aggettivo] DEFINITION [arrivato alla fine] TAGS []  
+ERRORS [6] WORD [operazione] TYPE [sostantivo] DEFINITION [atto dell' operare] TAGS []  
+ERRORS [21] WORD [responsabilità] TYPE [sostantivo] DEFINITION [capacità di conoscere , accettare ed affrontare le conseguenze di una propria azione o comportamento] TAGS [(filosofia)(psicologia)(diritto)(economia)]  
+ERRORS [19] WORD [incarico] TYPE [sostantivo] DEFINITION [mansione , impegno , ruolo di cui si è gravati] TAGS [(diritto)(economia)]  
+ERRORS [28] WORD [funzione] TYPE [sostantivo] DEFINITION [un'attività o un compito di una persona, di un organismo o di un componente di una apparecchiatura derivante da una mansione, da un ruolo, da una regola o da un progetto] TAGS [(politica)(diritto)(economia)(tecnologia)]  
+ERRORS [6] WORD [mansione] TYPE [sostantivo] DEFINITION [posto ove si alloggia] TAGS [(antico)]  
+ERRORS [23] WORD [esercizio] TYPE [sostantivo] DEFINITION [attività volta a migliorare una determinata abilità] TAGS [(diritto)(economia)(medicina)]  
+ERRORS [17] WORD [occupazione] TYPE [sostantivo] DEFINITION [acquisizione di un bene altrui con la forza] TAGS [(militare)]  
+ERRORS [9] WORD [professione] TYPE [sostantivo] DEFINITION [il professare un sentimento, un'idea, una fede] TAGS []  
+ERRORS [8] WORD [impiego] TYPE [sostantivo] DEFINITION [attività remunerata per conto di terzi] TAGS [(diritto)(economia)]  
+ERRORS [10] WORD [mestiere] TYPE [sostantivo] DEFINITION [lavoro artigianale] TAGS [(diritto)(economia)]  
+ERRORS [18] WORD [servizio] TYPE [sostantivo] DEFINITION [bene produttivo non tangibile ma ugualmente dotato di valore economico] TAGS [(diritto)(economia)]  
+ERRORS [4] WORD [prestazione] TYPE [sostantivo] DEFINITION [adempimento di un debitore al proprio dovere , volto a soddisfare le esigenze di un creditore] TAGS [(diritto)(economia)]  
+ERRORS [7] WORD [prodotto] TYPE [sostantivo] DEFINITION [il risultato ottenuto in una moltiplicazione] TAGS [(matematica)]  
+ERRORS [4] WORD [articolo] TYPE [sostantivo] DEFINITION [parte variabile del discorso , che precede il sostantivo , concordando con esso in numero e genere e precisandone il valore] TAGS [(grammatica)]  
+ERRORS [12] WORD [risultato] TYPE [sostantivo] DEFINITION [numero prodotto dall' operazione tra due numeri] TAGS [(matematica)]  
+ERRORS [3] WORD [sforzo] TYPE [sostantivo] DEFINITION [utilizzo di forze maggiore di quello solito] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/affaticamento)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/intricata 
+ERRORS [4] WORD [intrigo] TYPE [sostantivo] DEFINITION [serie di azioni poco lecite finalizzate ad ottenere uno scopo] TAGS []  
+ERRORS [10] WORD [inganno] TYPE [sostantivo] DEFINITION [azione compiuta di proposito al fine di trarre in errore qualcun altro] TAGS []  
+ERRORS [16] WORD [imbroglio] TYPE [sostantivo] DEFINITION [intreccio di oggetti difficilmente districabili] TAGS []  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/truffa 
+ERRORS [1] WORD [raggiro] TYPE [sostantivo] DEFINITION [prima persona singolare dell'indicativo presente di raggirare] TAGS []  
+ERRORS [13] WORD [trama] TYPE [sostantivo] DEFINITION [insieme di fili formanti un tessuto] TAGS [(tessile)(abbigliamento)(tecnologia)]  
+ERRORS [3] WORD [maneggio] TYPE [sostantivo] DEFINITION [posto recintato dove si ammaestrano i cavalli o dove si cavalca] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/lavorio)  
+JentiRequestWiktionary: Did not find words at url http://it.wiktionary.org/wiki/lavoratori 
+ERRORS [13] WORD [produzione] TYPE [sostantivo] DEFINITION [atto e risultato di produrre] TAGS [(economia)]  
+ERRORS [16] WORD [riposo] TYPE [sostantivo] DEFINITION [sospensione di uno sforzo] TAGS []  
+ERRORS [3] WORD [pigrizia] TYPE [sostantivo] DEFINITION [mancanza di determinazione nel compiere un' azione di cui si riconosce l' importanza] TAGS [(filosofia)(psicologia)]  
+ERRORS [4] WORD [inattività] TYPE [sostantivo] DEFINITION [carenza di laboriosità] TAGS []  
+ERRORS [15] WORD [ozio] TYPE [sostantivo] DEFINITION [trovarsi senza fare nulla, per scelta o necessità] TAGS []  
+ERRORS [1] WORD [hobby] TYPE [sostantivo] DEFINITION [passatempo , passione] TAGS [(forestierismo)]  
+ERRORS [0] WORD [passatempo] TYPE [sostantivo] DEFINITION [attività fatta per non annoiarsi mentre si aspetta qualcosa o qualcuno] TAGS []  
+ERRORS [0] WORD [divertimento] TYPE [sostantivo] DEFINITION [ciò che riesce divertire] TAGS []  
+ERRORS [6] WORD [svago] TYPE [sostantivo] DEFINITION [distacco da ciò che si fa normalmente per rilassarsi o divetirsi] TAGS []  
+ERRORS [4] WORD [disoccupazione] TYPE [sostantivo] DEFINITION [condizione di mancanza di lavoro in età adulta] TAGS [(sociologia)(diritto)(economia)]  
+ERRORS [5] WORD [pensione] TYPE [sostantivo] DEFINITION [emolumento assegnato mensilmente dall' INPS o da altri enti a chi, essendo anziano o per altro motivo non lavora] TAGS [(diritto)(economia)]  
+ERRORS [7] WORD [lavorare] TYPE [verbo] DEFINITION [svolgere un' attività fisica o intellettuale di breve o lunga durata] TAGS []  
+ERRORS [24] WORD [lavoratore] TYPE [sostantivo] DEFINITION [chi svolge un' attività a scopo di guadagno] TAGS [(professione)(diritto)(economia)]  
+ERRORS [0] WORD [lavoratore] TYPE [aggettivo] DEFINITION [che svolge un' attività a scopo di guadagno] TAGS []  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/telelavoro)  
+ERRORS [6] WORD [capolavoro] TYPE [sostantivo] DEFINITION [opera eccellente] TAGS [(arte)(letteratura)(poesia)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/status)  
+ERRORS [7] WORD [nazione] TYPE [sostantivo] DEFINITION [identità etnica e culturale di un popolo che spesso, ma non sempre, si identifica con lo stato] TAGS [(storia)]  
+ERRORS [2] WORD [statale] TYPE [sostantivo] DEFINITION [strada di cui lo stato ha cura la manutenzione] TAGS []  
+ERRORS [1] WORD [statale] TYPE [aggettivo] DEFINITION [gestito dallo stato] TAGS [(diritto)]  
+JentiRequestWiktionary: cannot file_get_contents(http://it.wiktionary.org/wiki/statista)  
+ERRORS [15] WORD [statistica] TYPE [sostantivo] DEFINITION [scienza che studia i fenomeni collettivi dal punto di vista quantitativo e qualitativo , per ottenerne un' osservazione più corretta e completa] TAGS [(matematica)(economia)(sociologia)(psicologia)(finanza)(statistica)]  
+ERRORS [0] WORD [statistica] TYPE [aggettivo] DEFINITION [femminile di statistico] TAGS []  
+ERRORS [3] WORD [statistico] TYPE [sostantivo] DEFINITION [studioso di statistica] TAGS [(professione)]  
+ERRORS [2] WORD [statistico] TYPE [aggettivo] DEFINITION [che concerne la statistica] TAGS [(finanza)(statistica)]  
+ERRORS [2] WORD [statuto] TYPE [sostantivo] DEFINITION [complesso di principi normativi, spesso tra loro " simili "] TAGS [(politica)(diritto)]  

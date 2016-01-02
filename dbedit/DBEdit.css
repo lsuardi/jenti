@@ -1,0 +1,48 @@
+
+.DBE_TABLE
+{
+    border: 1px solid black;
+    border-spacing: 0;
+    empty-cells: show;
+}
+.DBE_TD
+{
+    border: 1px solid black;
+    padding: 10px;
+    background: #F0F0F0;
+}
+.DBE_TD_HEADER
+{
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+    background: #C8C8C8;
+}
+.DBE_ERROR_MSG
+{
+    border: 0px;
+    padding-left: 5px;
+    background-color: #FF0000;
+    color: #ffffff;
+}
+.DBE_USR_MSG
+{
+    border: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #66CC99;
+}
+.DBE_BUTTON
+{
+    padding: 5px;
+}
+.DBE_TOOLBAR
+{
+    padding: 2px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: smaller;
+    white-space: nowrap;
+}
+

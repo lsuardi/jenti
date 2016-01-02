@@ -1,0 +1,100 @@
+.jenti-toolbar
+{
+    white-space: nowrap;
+    text-align: center;
+}
+
+.jenti-text-center
+{
+    text-align: center;
+    margin: 0pt 0pt 0pt 0pt;
+}
+
+.jenti-text-left
+{
+    text-align: left;
+    margin: 0pt 0pt 0pt 0pt;
+}
+
+.jenti-text-right
+{
+    text-align: right;
+    margin: 0pt 0pt 0pt 0pt;
+}
+
+.jenti-text-header
+{
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    margin: 0pt 0pt 0pt 0pt;
+    padding:  5pt 0pt 5pt 0pt;
+}
+
+.jenti-text-footer
+{
+    font-weight: normal;
+    text-align: center;
+    margin: 0pt 0pt 0pt 0pt;
+    padding:  5pt 0pt 5pt 0pt;
+}
+
+.jenti-popup
+{
+    /*max-width: 280px;*/
+}
+
+.jenti-button
+{
+    margin: 0pt 0pt 2pt 0pt;
+    padding: 2pt;
+}
+
+.jenti-word-input
+{
+    font-weight: normal;
+    text-align: center;
+    margin: 10pt 0pt 0pt 0pt;
+    padding:  5pt 0pt 5pt 0pt;
+    text-transform:uppercase;
+}
+
+.jenti-login-input
+{
+    font-weight: normal;
+    text-align: center;
+    padding:  5pt 0pt 5pt 0pt;
+    min-width: 200pt;
+    width: 80%;
+}
+
+.jenti-red-border
+{
+    border-color: #ff0000;
+    border-width: 1pt;
+}
+
+
+
+/* jquery custom styles */
+
+#custom-border-radius .ui-btn-icon-notext.ui-corner-all {
+    -webkit-border-radius: .3125em;
+    border-radius: .3125em;
+}
+
+.footer-button-left,
+.footer-button-right 
+{
+    position: absolute;
+    margin: 0;
+    bottom: 0.5em;
+}
+.footer-button-left 
+{
+    left: 0.5em;
+}
+.footer-button-right 
+{
+    right: 0.5em;
+}

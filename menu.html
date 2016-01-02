@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            var url;
+            $(document).ready(function(){
+                $("input[type=button]").click(function(){
+                    if($(this).val() === 'LOGIN')
+                        url = 'login.php';
+                    if($(this).val() === 'RESUME')
+                        url = 'resume.php';
+                    if($(this).val() === 'LOGOUT')
+                        url = 'logout.php';
+                    
+                    $.ajax({
+                        url: url
+                    }).done(function( data ){
+                        $("#msg").html( data );
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="msg"></div>
+        <div><input type="button" value="LOGIN"></div>
+        <div><input type="button" value="RESUME"></div>
+        <div><input type="button" value="LOGOUT"></div>
+    </body>
+</html>

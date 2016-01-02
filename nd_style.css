@@ -1,0 +1,369 @@
+.StandardBody
+{
+    BACKGROUND: #AAAAAA;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: justify;
+    padding: 10;
+    margin: 0pt 0pt 0pt 0pt;
+}
+.ThinBorder
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    BACKGROUND: #ffffff;
+}
+.ThinSides
+{
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #000000;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #000000;
+    BACKGROUND: #ffffff;
+}
+.HeaderTitle
+{
+    FONT-SIZE: 40pt;
+    FONT-WEIGHT: bold;
+    color: black;
+}
+.Toolbar
+{
+    border: none;
+    padding: 3pt;
+    BACKGROUND: #000000;
+    FONT-FAMILY: arial;
+    FONT-SIZE: 10pt;
+}
+.PageTitle
+{
+    FONT-SIZE: 20pt;
+    FONT-WEIGHT: bold;
+    color: black;
+}
+.ErrorBox
+{
+    COLOR: red;
+    BACKGROUND: #dedede;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold;
+    padding: 5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+.ContentPanel
+{
+    padding: 5pt;
+    vertical-align: top;
+    text-align: left;
+    BACKGROUND: #FFFFFF;
+}
+.SmallText
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+}
+A.AnyLink
+{
+    white-space: nowrap;
+    FONT-WEIGHT: bold;
+}
+A:hover 
+{ 
+    color: red; 
+}
+A.NavLink
+{
+    COLOR: black;
+    white-space: nowrap;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 90%;
+}
+.NavTitle
+{
+    BACKGROUND: #E8E8E8 ;
+    FONT-WEIGHT: bold;
+    padding-bottom: 5;
+    FONT-SIZE: 110%;
+}
+.NavCell
+{
+    padding-left: 10;
+    padding-right: 10;
+    padding-bottom: 3;
+}
+.NavPanel
+{
+    BACKGROUND: #E8E8E8 ;
+}
+.FormTable
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E8E8E8 ;
+}
+.FormTitle
+{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #E8E8E8 ;
+  FONT-STYLE: normal;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 16pt;
+}
+.FormLabel
+{
+  vertical-align: top;
+  width: 200px;
+}
+.FormControlCell
+{
+  vertical-align: top;
+  width: 200px;
+}
+.FormControl
+{
+  width: 200px;
+}
+.FormFilter
+{
+  width: 70px;
+}
+.FormTools
+{
+  vertical-align: center;
+  padding-right: 3;
+  white-space: nowrap;
+}
+.FormHelp
+{
+  FONT-SIZE: 8pt;
+  vertical-align: top;
+  COLOR: #999999;
+}
+.TABLE_ResultSet
+{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #E8E8E8 ;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #E8E8E8 ;
+}
+.TD_ResultSet
+{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #E8E8E8 ;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #E8E8E8 ;
+  padding-left: 5;
+  padding-right: 5;
+  padding-top: 3;
+  padding-bottom: 3;
+  vertical-align: top;
+}
+.ResultSetTitle
+{
+    BACKGROUND: #E8E8E8;
+    FONT-WEIGHT: bold;
+    padding-right: 3;
+    padding-left: 3;
+    vertical-align: bottom;
+    text-align: center;
+    FONT-SIZE: 10pt;
+}
+.TABLE_ThinBorder
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E8E8;
+}
+.TD_Button
+{
+    BACKGROUND: #DEDEDE;
+    FONT-SIZE: 8pt;
+    padding-left: 3pt;
+    padding-right: 3pt;
+    padding-bottom: 2pt;
+    text-align: center;
+}
+
+
+
+.GraphBody
+{ 
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    TEXT-ALIGN: justify;
+}
+.GraphHintBody
+{
+    BACKGROUND: #FFFFFF;
+    margin: 0pt 0pt 0pt 0pt;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+    TEXT-ALIGN: justify;
+}
+.GHB
+{
+    BACKGROUND: #FFFFFF;
+    margin: 0pt 0pt 0pt 0pt;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+}
+.GraphHintTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+}
+.GHT
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+}
+.GraphHintTable
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E8E8 ;
+    align: center;
+}
+.GHTA
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E8E8 ;
+    align: center;
+}
+.GraphHintFieldTitle
+{
+    BACKGROUND: #E8E8E8;
+    FONT-WEIGHT: bold;
+    padding-right: 3;
+    padding-left: 3;
+    FONT-SIZE: 10pt;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.GHFT
+{
+    BACKGROUND: #E8E8E8;
+    FONT-WEIGHT: bold;
+    padding-right: 3;
+    padding-left: 3;
+    FONT-SIZE: 10pt;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.GraphHintField
+{
+    BACKGROUND: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E8E8 ;
+    FONT-SIZE: 10pt;
+    padding-right: 3pt;
+    padding-left: 3pt;
+}
+.GHF
+{
+    BACKGROUND: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E8E8E8 ;
+    FONT-SIZE: 10pt;
+    padding-right: 3pt;
+    padding-left: 3pt;
+}
+.GraphHintText
+{
+    BACKGROUND: #FFFFFF;
+    FONT-SIZE: 10pt;
+    padding-right: 3pt;
+    padding-left: 3pt;
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    vertical-align: top;
+}
+.GHH
+{
+    FONT-SIZE: 8pt;
+    vertical-align: top;
+}
+.GraphToolbar
+{
+    BACKGROUND: #DEDEDE;
+    padding: 3;
+    padding-right: 10;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+    FONT-WEIGHT: bold;
+}
+.GraphHelpItem
+{
+    BACKGROUND: #FFFFFF;
+    text-align: center;
+    padding: 20;
+    width: 250;
+}
+.GraphHelpDesc
+{
+    BACKGROUND: #FFFFFF;
+    vertical-align: top;
+    padding: 5;
+}
+.GraphHelpBody
+{
+    BACKGROUND: #E8E8E8;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+    FONT-WEIGHT: normal;
+    padding: 10;
+    margin: 0 0 0 0;
+    TEXT-ALIGN: justify;
+}
+A.GraphLink
+{
+    COLOR: black;
+    white-space: nowrap;
+}
+.Width60
+{
+    width: 60px;
+}
+.NoWrap
+{
+    white-space: nowrap;
+}
+
+.ReportBody
+{
+    BACKGROUND: #FFFFFF;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;    
+}
+.ReportTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+}
+.ReportFieldTitle
+{
+    FONT-WEIGHT: bold;
+    white-space: nowrap;
+    vertical-align: top;
+    width: 250px;
+}
+.ReportFieldData
+{
+    vertical-align: top;
+}
+.ReportText
+{
+    text-align: justify;
+}
+
+
