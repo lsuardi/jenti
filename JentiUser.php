@@ -26,7 +26,12 @@ extends ManagerSql
     {
         if (!isset($user_info["NAME"]))
         {
-            $user_info["NAME"] = substr($user_info["EMAIL"], 0, strpos($user_info["EMAIL"], "@"));
+            $pos = strpos($user_info["EMAIL"], "@");
+            $user_info["NAME"] = 
+                $pos === FALSE 
+                ? $user_info["EMAIL"] 
+                : substr($user_info["EMAIL"], 0 , $pos)
+                ;
         }
 
         $this->query_insert($this->table_user, $user_info);
@@ -72,13 +77,14 @@ extends ManagerSql
             else
             {
                 $user_info = $user_array[0];
-            /* TODO
-                if (!$user_info["VERIFIED"])
-                {
-                    //TODO use catalog
-                    $this->error = "User email is not confirmed.";
-                }
-            */}
+                /* TODO
+                    if (!$user_info["VERIFIED"])
+                    {
+                        //TODO use catalog
+                        $this->error = "User email is not confirmed.";
+                    }
+                */      
+            }
         }
 
         return $user_info;
@@ -107,7 +113,7 @@ extends ManagerSql
             $this->error = "User not found.";
             return null;
         }
-
+        
         return $user_array[0];
     }
 

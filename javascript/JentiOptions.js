@@ -209,6 +209,7 @@ function render_profile()
 
     $("#button-profile").click(function(event) 
     {
+        // TODO validate email
         var email = tools_validate_string("#input-email", catalog[28]);
         var pwd = tools_validate_string("#input-pwd", catalog[29]);
         var birthdate = tools_validate_string("#input-birth-date", catalog[33]);
