@@ -51,6 +51,7 @@ $catalog[34]  = " * ";
 $catalog[35]  = "mm/dd/yyyy";
 $catalog[36]  = "Points for ";
 $catalog[37]  = "Register and login to keep total score and participate in the game rankings.";
+$catalog[38]  = "You are registered. Enjoy play!";
 
 
 ?>

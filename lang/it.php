@@ -53,6 +53,7 @@ $catalog[36]  = "Punti per";
 $catalog[37]  = "Registrati e accedi per mantenere il punteggio totale e "
               . "partecipare alle classifiche del gioco."
               ;
+$catalog[38]  = "Sei registrato. Buon divertimento!";
 
 
 ?>

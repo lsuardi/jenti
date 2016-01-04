@@ -119,14 +119,14 @@ function render_login()
                 + '<BR><BR><BR>'
 
                 + '<div id="div-login-button" data-role="content" class="jenti-text-center">'
-                + '  <button id="button-login" class="ui-btn ui-btn-inline ui-corner-all">' 
+                + '  <button id="button-dologin" class="ui-btn ui-btn-inline ui-corner-all">' 
                 +      catalog[2] + '</button>'
                 + '</div>'
                 ;
 
     $("#div-content").html(html);
 
-    $("#button-login").click(function(event) 
+    $("#button-dologin").click(function(event) 
     {
         var catalog = jQuery.data(document.body, "catalog");
 
@@ -149,17 +149,15 @@ function render_login()
                         tools_render_error_json(json); 
                         return;
                     }
-
-                    //TODO registration message
-
-                    // reload index
+                    
+                    $.cookie("jenti_render", "home");
                     window.location.href = "index.php";
                 },
                 error: function(xhr, status, errorThrown) 
                 {
                     tools_render_error_ajax(xhr, status, errorThrown); 
                 }
-            });            
+            });       
         }
     });
 }
@@ -194,7 +192,7 @@ function render_profile()
                 + '  value="" class="ui-body-a ui-corner-all jenti-login-input">'
         
                 + '<BR><BR><BR>'
-
+        
                 + '<div id="div-login-button" data-role="content" class="jenti-text-center">'
                 + '  <button id="button-profile" class="ui-btn ui-btn-inline ui-corner-all">' 
                 +      catalog[31] + '</button>'
@@ -236,11 +234,34 @@ function render_profile()
                         return;
                     }
 
-                    //TODO registration message
+                    // automatically login after registration
+                    $.ajax({
+                        url: "ajax/post_login.php",
+                        data: {
+                            BERGAMO: email,
+                            ENDINE: pwd
+                        },
+                        type: "POST",
+                        dataType : "json",
+                        success: function(json) 
+                        {
+                            if (json.hasOwnProperty("ERROR"))
+                            {
+                                tools_render_error_json(json); 
+                                return;
+                            }
 
-                    // reload index and render options page
-                    $.cookie("jenti_render", "options");
-                    window.location.href = "index.php";
+                            // user registered
+                            alert(catalog[38]);
+
+                            $.cookie("jenti_render", "home");
+                            window.location.href = "index.php";
+                        },
+                        error: function(xhr, status, errorThrown) 
+                        {
+                            tools_render_error_ajax(xhr, status, errorThrown); 
+                        }
+                    });       
                 },
                 error: function(xhr, status, errorThrown) 
                 {
@@ -249,4 +270,34 @@ function render_profile()
             });            
         }
     });
+}
+
+function ajax_login(email, pwd)
+{
+    var result = true;
+
+    $.ajax({
+        url: "ajax/post_login.php",
+        data: {
+            BERGAMO: email,
+            ENDINE: pwd
+        },
+        type: "POST",
+        dataType : "json",
+        success: function(json) 
+        {
+            if (json.hasOwnProperty("ERROR"))
+            {
+                tools_render_error_json(json); 
+                result = false;
+            }
+        },
+        error: function(xhr, status, errorThrown) 
+        {
+            tools_render_error_ajax(xhr, status, errorThrown); 
+            result = false;
+        }
+    });       
+    
+    return result;
 }
