@@ -134,30 +134,10 @@ function render_login()
         var pwd = tools_validate_string("#input-pwd", catalog[29]);
         if (email && pwd)
         {
-            $.ajax({
-                url: "ajax/post_login.php",
-                data: {
-                    BERGAMO: email,
-                    ENDINE: pwd
-                },
-                type: "POST",
-                dataType : "json",
-                success: function(json) 
-                {
-                    if (json.hasOwnProperty("ERROR"))
-                    {
-                        tools_render_error_json(json); 
-                        return;
-                    }
-                    
-                    $.cookie("jenti_render", "home");
-                    window.location.href = "index.php";
-                },
-                error: function(xhr, status, errorThrown) 
-                {
-                    tools_render_error_ajax(xhr, status, errorThrown); 
-                }
-            });       
+            ajax_login(email, pwd, function(json) 
+            {
+                // noop
+            });
         }
     });
 }
@@ -235,32 +215,10 @@ function render_profile()
                     }
 
                     // automatically login after registration
-                    $.ajax({
-                        url: "ajax/post_login.php",
-                        data: {
-                            BERGAMO: email,
-                            ENDINE: pwd
-                        },
-                        type: "POST",
-                        dataType : "json",
-                        success: function(json) 
-                        {
-                            if (json.hasOwnProperty("ERROR"))
-                            {
-                                tools_render_error_json(json); 
-                                return;
-                            }
-
-                            // user registered
-                            alert(catalog[38]);
-
-                            $.cookie("jenti_render", "home");
-                            window.location.href = "index.php";
-                        },
-                        error: function(xhr, status, errorThrown) 
-                        {
-                            tools_render_error_ajax(xhr, status, errorThrown); 
-                        }
+                    ajax_login(email, pwd, function(json) 
+                    {
+                        // user registered message
+                        alert(catalog[38]);
                     });       
                 },
                 error: function(xhr, status, errorThrown) 
@@ -272,10 +230,8 @@ function render_profile()
     });
 }
 
-function ajax_login(email, pwd)
+function ajax_login(email, pwd, success_callback)
 {
-    var result = true;
-
     $.ajax({
         url: "ajax/post_login.php",
         data: {
@@ -284,20 +240,22 @@ function ajax_login(email, pwd)
         },
         type: "POST",
         dataType : "json",
-        success: function(json) 
+        success: function(json)
         {
             if (json.hasOwnProperty("ERROR"))
             {
                 tools_render_error_json(json); 
-                result = false;
+                return;
             }
+            
+            success_callback(json);
+            
+            $.cookie("jenti_render", "home");
+            window.location.href = "index.php";
         },
         error: function(xhr, status, errorThrown) 
         {
             tools_render_error_ajax(xhr, status, errorThrown); 
-            result = false;
         }
     });       
-    
-    return result;
 }
