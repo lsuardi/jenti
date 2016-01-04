@@ -293,7 +293,15 @@ function html_score()
         msg = catalog[36] + " " + name;
     }
     
-    return msg + " " + score;
+    msg = msg + " " + score;
+    
+    if ($.cookie('jenti_email') === undefined)
+    {
+        // user not logged in, add login hint
+        msg = msg + '</br></br>' + catalog[37];
+    }
+    
+    return msg;
 }
 
 

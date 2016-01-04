@@ -50,6 +50,9 @@ $catalog[33]  = "Data di Nascita";
 $catalog[34]  = " * ";
 $catalog[35]  = "dd/mm/yyyy";
 $catalog[36]  = "Punti per";
+$catalog[37]  = "Registrati e accedi per mantenere il punteggio totale e "
+              . "partecipare alle classifiche del gioco."
+              ;
 
 
 ?>
