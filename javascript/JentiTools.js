@@ -18,8 +18,8 @@ function tools_get_url_vars()
 
 function tools_render_error_ajax(xhr, status, errorThrown)
 {
-    var msg = "Status: " + xhr.status
-    		+ " Error: " + errorThrown 
+    var msg = "Error: " + errorThrown
+            + "Status: " + status
             ;
     alert(msg);
 }
