@@ -10,7 +10,7 @@
 global $config;
 
 // debug flag
-$config["debug"] = 0;
+$config["debug"] = -1;
 
 $config["wait"] = 6;
 $config["cache_on"] = true;
@@ -45,6 +45,15 @@ else if (php_uname('n') == "MATTEO-PC")
     $config["hostname"] = "localhost";
     $config["user_name"] = "root";
     $config["user_pswd"] = "";
+    $config["user_db"] = "jenti";
+    $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
+}
+else if (php_uname('n') == "ELIASUARDI-PC")
+{
+    // local development system
+    $config["hostname"] = "localhost";
+    $config["user_name"] = "root";
+    $config["user_pswd"] = "root";
     $config["user_db"] = "jenti";
     $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
 }
