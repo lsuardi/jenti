@@ -14,7 +14,7 @@ if($session->error)
     test_echobr($session->error);
 }
 
-$session->login("gigi@ggg.com", "dddd");
+$session->login("gigi", "gigi");
 if($session->error)
 {
     test_echobr($session->error);

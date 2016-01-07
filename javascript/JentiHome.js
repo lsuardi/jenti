@@ -66,7 +66,7 @@ function render_home()
                 $("#button-hint").removeClass("ui-disabled");
                 $("#button-guess").removeClass("ui-disabled");
                 $("#button-show").removeClass("ui-disabled");
-                $("#p-score").text(html_score());
+                $("#p-score").html(html_score());
                 
                 // save word data
                 jQuery.data(document.body, "word_json", json);
@@ -121,14 +121,11 @@ function render_home()
                         tools_render_error(JSON.stringify(json,null,2)); 
                         return;
                     }
-                    $("#p-score").text(html_score());
+                    $("#p-score").html(html_score());
                 },
                 error: function(xhr, status, errorThrown) 
                 {
-                    var msg = "Error: " + errorThrown
-                            + "Status: " + status
-                            ;
-                    $("#span-footer").text(msg);
+                    tools_render_error_ajax(xhr, status, errorThrown);
                 }
             });
         }
@@ -276,6 +273,9 @@ function html_score()
 {
     var catalog = jQuery.data(document.body, "catalog");
     
+    tmp = $.cookie('jenti_email');
+    tmp = $.cookie('jenti_score');
+    
     var score = 0;
     if ($.cookie('jenti_score') !== undefined)
     {
@@ -298,46 +298,8 @@ function html_score()
     if ($.cookie('jenti_email') === undefined)
     {
         // user not logged in, add login hint
-        msg = msg + '</br></br>' + catalog[37];
+        msg = msg + '<br><br>' + catalog[37];
     }
     
     return msg;
-}
-
-
-
-function render_options()
-{
-    var catalog = jQuery.data(document.body, "catalog");
-    
-    var html 
-        = '<button id="button-play" class="ui-btn ui-corner-all">' + catalog[1] + '</button>\n'
-        + '<button id="button-login" class="ui-btn ui-corner-all">' + catalog[2] + '</button>\n'
-        + '<button id="button-language" class="ui-btn ui-corner-all">' + catalog[3] + '</button>\n'
-        + '<button id="button-about" class="ui-btn ui-corner-all">' + catalog[4] + '</button>\n'
-        ;
-    
-    $("#div-content").html(html);
-
-    $("#button-play").click(function(event) 
-    {
-        $.ajax({
-            url: "ajax/get_next_word.php",
-            //data: {
-            //id: 123
-            //},
-            type: "GET",
-            dataType : "json",
-            success: function(json) 
-            {
-                var word = json.WORD;
-                var definition = json.DEFINITION;
-                $("#div-content").html(catalog[0] + " = " + definition);
-            },
-            error: function(xhr, status, errorThrown) 
-            {
-                tools_render_error_ajax(xhr, status, errorThrown);
-            }
-        });
-    });
 }

@@ -32,11 +32,14 @@ class JentiSession
     
     // session duration
     private $duration;
-    private $long_duration;
         
-    // user info
+    // user
+    private $user_mgr;
+    private $user;
     private $score;
-    
+    private $email;
+    private $name;
+
     /**
      * Create jenti session.
      *
@@ -44,11 +47,10 @@ class JentiSession
      */
     function __construct($config=null) 
     {
-//        session_start();
-        
         $this->config = $config;
-        $this->duration = time() + 60*60; // 1 hour
-        $this->long_duration = time() + 365*24*60*60; // 1 year
+//        $this->duration = time() + 60*60; // 1 hour
+        $this->duration = time() + 60*5; // 5 minutes
+        $this->user_mgr = null;
         $this->init();
     }
     
@@ -64,16 +66,17 @@ class JentiSession
     
         $user_array["EMAIL"] = $email;
         $user_array["PASSWORD"] = $password;
-        $user = new JentiUser($this->config);
-        $user_info = $user->validate_user($user_array);
-        if (!$user->error)
+        $user_mgr = new JentiUser($this->config);
+        $user_info = $user_mgr->validate_user($user_array);
+        if (!$user_mgr->error)
         {
             // set user cookies
-            setcookie(COOKIE_EMAIL, $email, $this->long_duration, "/"); 
-            setcookie(COOKIE_NAME, $user_info["NAME"], $this->long_duration, "/"); 
+            setcookie(COOKIE_EMAIL, $email, $this->duration, "/"); 
+            setcookie(COOKIE_NAME, $user_info["NAME"], $this->duration, "/"); 
+            setcookie(COOKIE_SCORE, $user_info["SCORE"], $this->duration, "/"); 
         }
         
-        $this->error = $user->error;
+        $this->error = $user_mgr->error;
     }
     
     /**
@@ -83,8 +86,6 @@ class JentiSession
     public function logout()
     {
         setcookie(COOKIE_EMAIL, '', time()-42000, "/");
-        //unset($_SESSION['EMAIL']);             
-        //session_destroy();
     }
     
     /**
@@ -110,7 +111,17 @@ class JentiSession
     {
         $score = $guess_info["SCORE"] > 0 ? $guess_info["SCORE"] : 0;
         $new_score = $this->score + $score;
-        setcookie(COOKIE_SCORE, $new_score, $this->duration, "/");         
+        setcookie(COOKIE_SCORE, $new_score, $this->duration, "/");
+        
+        if ($this->is_user_authenticated())
+        {
+            // save to database            
+            $this->user["SCORE"] = $new_score;
+            $this->user_mgr = new JentiUser($this->config);
+            $this->user_mgr->update_user($this->user);
+            
+            $this->error = $this->user_mgr->error;
+        }
     }
 
     /**
@@ -124,7 +135,10 @@ class JentiSession
         if (!$user->error)
         {
             $feedback_info["TYPE"] = ACTIVITY_FEEDBACK;
-            //TODO $feedback_info["EMAIL"] = $this->email;
+            if ($this->is_user_authenticated())
+            {
+                $feedback_info["EMAIL"] = $this->email;
+            }
             $user->add_user_activity($feedback_info);
         }
 
@@ -191,11 +205,16 @@ class JentiSession
         $this->language_code = $this->init_from_cookie(COOKIE_LANGUAGE_CODE, $this->get_accept_language());
         $this->skin = $this->init_from_cookie(COOKIE_SKIN, $this->config["default_skin"]);
         $this->score = $this->init_from_cookie(COOKIE_SCORE, 0);
+        $this->name = $this->init_from_cookie(COOKIE_NAME, null);
+        $this->email = $this->init_from_cookie(COOKIE_EMAIL, null);
         if ($this->is_user_authenticated())
         {
-            // initialize from database
-            $user_mgr = new JentiUser($this->config);
-            //TODO $user_mgr->get_user($email);
+            // initialize user session from database
+            $this->user_mgr = new JentiUser($this->config);
+            $this->user = $this->user_mgr->get_user($this->email);
+
+            // override cookie when session available
+            $this->score = $this->user["SCORE"];
         }
         
         // load $catalog from file

@@ -38,6 +38,16 @@ extends ManagerSql
     }
     
     /**
+     * Updates user in database.
+     *
+     * @param array $user_info user data
+     */
+    public function update_user($user_info)
+    {
+        $this->query_update($this->table_user, $user_info);
+    }
+    
+    /**
      * Inserts new user activity in database.
      *
      * @param array $activity_info user activity data

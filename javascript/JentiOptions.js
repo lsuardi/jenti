@@ -249,8 +249,7 @@ function ajax_login(email, pwd, success_callback)
             }
             
             success_callback(json);
-            
-            $.cookie("jenti_render", "home");
+
             window.location.href = "index.php";
         },
         error: function(xhr, status, errorThrown) 

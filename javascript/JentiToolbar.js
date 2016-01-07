@@ -22,13 +22,11 @@ $(document).ready(function()
                     if (json.hasOwnProperty("ERROR"))
                     {
                         tools_render_error(JSON.stringify(json,null,2)); 
-                        return;
                     }
                 },
                 error: function(xhr, status, errorThrown) 
                 {
                     tools_render_error_ajax(xhr, status, errorThrown);
-                    return;
                 }
             });
         }

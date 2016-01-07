@@ -1,14 +1,10 @@
 
 TODO
 
-- how session works
-  0. user info cookies expire every day
-  1. init user info from cookies
-  2. if user email available (email cookie set on login for 1 year)
-  2.1 update cookies with info from database
-  2.2 set database update flag (do only once a day)
-
-- add message YOUR SCORE IS NOT SAVED UNTIL YOU REGISTER
+- feedback requires word
+- cookie names on JS side
+- create JentiAjax class to handle ajax calls
+- ignore registration of existing user
 - need JentiSession->format_date_for_strtotime( date, format )
 - word guerra does not load definition 5 because of overlapping short desc
 - count guesses, popular words
