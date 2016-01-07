@@ -153,6 +153,21 @@ function render_home()
             $("#button-show").addClass("ui-disabled");            
         }
     });
+
+    $("#button-guess-popup").bind(
+    {
+    	// play again after guessing a word
+        popupafterclose: function(event, ui)
+        {
+        	var word_json = jQuery.data(document.body, "word_json");
+        	var word = word_json.WORD;
+        	var guess = $("#input-word").val();
+        	if (guess.toUpperCase() === word.toUpperCase())
+        	{
+        		$("#button-play").click();
+        	}
+        }
+    });
 }
 
 

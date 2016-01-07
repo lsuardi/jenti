@@ -238,7 +238,7 @@ class JentiSession
                 : strlen($accept_language)
                 ;
         $accept_languages_csv = substr($accept_language, 0, $len);
-        $accept_languages_array = split(",", $accept_languages_csv);
+        $accept_languages_array = explode(",", $accept_languages_csv);
         $supported_language = array_intersect(
             $accept_languages_array, $this->config["supported_language_codes"]);
         $supported_language_values = array_values($supported_language);
