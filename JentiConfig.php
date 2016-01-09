@@ -30,7 +30,7 @@ $config["skins"] = array("blue","orange","yellow","black");
 $config["default_skin"] = "blue";
 
 // database credentials and other system specific properties
-if (php_uname('n') == "LSUARDI-PC")
+if ((php_uname('n') == "LSUARDI-PC") || (php_uname('n') == "LSUARDI-PC2"))
 {
     // local development system
     $config["hostname"] = "localhost";
