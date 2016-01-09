@@ -7,6 +7,8 @@
 ////////// INTERNAL DEFAULTS ARE USED WHEN ITEMS ARE NOT DEFINED ////////// 
 ///////////////////////////////////////////////////////////////////////////
 
+error_reporting(E_ALL ^ E_DEPRECATED);
+
 global $config;
 
 // debug flag
@@ -39,12 +41,12 @@ if ((php_uname('n') == "LSUARDI-PC") || (php_uname('n') == "LSUARDI-PC2"))
     $config["user_db"] = "jenti";
     $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
 }
-else if (php_uname('n') == "MATTEO-PC")
+else if (php_uname('n') == "Elia-Suardis-iMac.local")
 {
     // local development system
     $config["hostname"] = "localhost";
     $config["user_name"] = "root";
-    $config["user_pswd"] = "";
+    $config["user_pswd"] = "root";
     $config["user_db"] = "jenti";
     $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
 }

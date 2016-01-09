@@ -5,6 +5,8 @@ require_once "../JentiSession.php";
 require_once "../JentiWord.php";
 require_once "../JentiAjax.php";
 
+set_error_handler("ajax_error_handler");
+
 $session = new JentiSession($config);
 if($session->error)
 {
@@ -28,3 +30,5 @@ if ($jenti->error)
 }
 
 echo ajax_json_response($response);
+
+restore_error_handler();

@@ -30,5 +30,18 @@ function ajax_json_response_error($error, $data=null)
     return json_encode($response);
 }
 
+function ajax_error_handler($errno, $errstr, $errfile, $errline)
+{
+    if ($errno == E_DEPRECATED)
+    {
+        // ignore deprecated errors
+        return;
+    }
+        
+    header('HTTP/1.1 500 ['.$errno.'] '.$errstr.' in '.$errfile.' at line '.$errline);
+    header('Content-Type: application/json; charset=UTF-8');
+    die();
+}
+
 
 ?>
