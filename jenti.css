@@ -1,3 +1,39 @@
+
+.jenti-sp-body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Tahoma, Arial;
+    background-color: #AD0000;
+    color: #FFFFFF;
+    display: table;
+}
+
+.jenti-sp-logo
+{
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    display: table-cell;
+    height: 100%;
+    opacity: 0;
+}
+
+.jenti-sp-logo-text
+{
+    font-size: 180px;
+    font-weight: bold;
+}
+
+.jenti-sp-button
+{
+    font-size: 80px;
+    padding: 3px 3px 3px 3px;
+}
+
 .jenti-toolbar
 {
     white-space: nowrap;

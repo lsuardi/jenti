@@ -1,65 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html class="jenti-sp-body">
     <head>
         <title>Jenti</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="jquery.mobile.1.4.5/jquery.mobile-1.4.5.min.css">
         <link rel="stylesheet" href="jenti.css">
         <script src="jquery.mobile.1.4.5/demos/js/jquery.min.js"></script>
-        <script src="jquery.mobile.1.4.5/demos/js/jquery.mobile-1.4.5.min.js"></script>
-        <script src="javascript/JentiPlay.js"></script>
-        <script src="javascript/JentiSelectAction.js"></script>
+        <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="javascript/JentiSplashScreen.js"></script>
     </head>
-    <body>
-        <div data-role="page">
-            
-            <div id="div-header" data-role="header">
-                <div class="ui-bar jenti-text-center ui-in">
-                
-                    <table width="100%">
-                        <tr>
-                            <td class="jenti-text-left" width="33%">
-                                <select name="select-language" id="select-language" >
-                                    <option value="it">Italian</option>
-                                    <option value="en">English</option>
-                                </select>
-                            </td>
-                            
-                            <td class="jenti-text-center" width="34%">
-                                <p class="jenti-text-header jenti-text-center">Jenti</p>
-                            </td>
-                            
-                            <td class="jenti-text-right" width="33%">
-                                <select name="select-action" id="select-action" >
-                                    <option value="register">Register</option>
-                                    <option value="login">Login</option>
-                                    <option value="about">About</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </table>
-                <!--<button id="button-register" class="ui-btn-right ui-btn-inline">Register</button>-->
-                                
-                </div>
-            </div>
-            
-            <div id="div-definition" data-role="content" class="jenti-text-center">
-                <p id="p-definition">Click play to start playing Jenti...</p>
-            </div>
-            
-            <div id="div-word" data-role="content" class="jenti-text-center">
-                <p id="p-word">...</p>
-            </div>
-            
-            <div id="div-play" data-role="content" class="jenti-text-center">
-                <button id="button-play" class="ui-btn ui-btn-inline ui-corner-all">Play</button>
-            </div>
-            
-            <div id="div-footer" data-role="footer" class="jenti-text-center">
-                <p class="jenti-text-footer jenti-text-center">Play & Learn</p>
-            </div>
-            
-        </div><!-- /page -->
+    <body class="jenti-sp-body">
+        
+        <div id="sp-logo" class="jenti-sp-logo">
+        </div>
 
     </body>
 </html>
