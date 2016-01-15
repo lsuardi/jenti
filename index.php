@@ -20,11 +20,12 @@ $session->save_user_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jenti</title>
+        <title> J E N T I </title>
         
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="icon" href="./favicon.png" />
+       
         <!--
         <link rel="stylesheet" href="jquery.mobile.1.4.5/jquery.mobile-1.4.5.min.css">
         -->

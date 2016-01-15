@@ -5,9 +5,9 @@
     height: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    font-family: Tahoma, Arial;
-    background-color: #AD0000;
-    color: #FFFFFF;
+    /*background-color: #AD0000;*/
+    background-color: #DDDDDD;
+    color: #7691a7;
     display: table;
 }
 
@@ -24,6 +24,7 @@
 
 .jenti-sp-logo-text
 {
+    font-family: Tahoma, Arial;
     font-size: 180px;
     font-weight: bold;
 }

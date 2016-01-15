@@ -17,7 +17,11 @@ $(document).ready(function()
                 
                 $("#sp-logo").html(html_logo());
                 $("#sp-logo").delay(0).animate({ opacity: 1 }, 3000);
-
+                
+                $("#sp-button-play").click(function(event)
+                {
+                    window.location.href = "index.php";
+                })
             },
             error: function(xhr, status, errorThrown) 
             {
@@ -35,8 +39,6 @@ function html_logo()
         = '<span id="sp-logo-span" class="jenti-sp-logo-text">' + catalog[0] + '</span>'
         + '<br><br><br><br><br><br><br>'
         + '<button id="sp-button-play" class="ui-btn ui-btn-inline ui-corner-all jenti-sp-button ">' + catalog[1] + '</button>'
-        + '<br><br><br><br>'
-        + '<button id="sp-button-play" class="ui-btn ui-btn-inline ui-corner-all jenti-sp-button ">' + catalog[4] + '</button>'
         ;
     
     return html;
