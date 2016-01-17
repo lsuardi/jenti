@@ -54,6 +54,9 @@ $catalog[37]  = "Registrati e accedi per mantenere il punteggio totale e "
               . "partecipare alle classifiche del gioco."
               ;
 $catalog[38]  = "Sei registrato. Buon divertimento!";
-
+$catalog[39]  = "Mi Piace";
+$catalog[40]  = "Non Mi Piace";
+$catalog[41]  = "Suggerisci";
+$catalog[42]  = "Suggerimento Opzionale";
 
 ?>

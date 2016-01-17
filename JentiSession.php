@@ -3,6 +3,7 @@
 // Copyright 2015 - NINETY-DEGREES
 
 require_once "JentiUser.php";
+require_once "JentiWord.php";
 
 // jenti session cookies
 define ( "COOKIE_LANGUAGE_CODE",    "jenti_language_code");
@@ -131,6 +132,16 @@ class JentiSession
      */
     public function save_user_feedback($feedback_info)
     {
+        if(isset($feedback_info["LIKE"]))
+        {
+            $word = new JentiWord($this->config);
+            if(!$word->error)
+            {
+                $word->update_likes($feedback_info);
+            }
+            $this->error = $word->error;
+        }
+        
         $user = new JentiUser($this->config);
         if (!$user->error)
         {

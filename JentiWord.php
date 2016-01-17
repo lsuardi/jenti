@@ -212,6 +212,17 @@ extends ManagerSql
              
         return $this->query($sql);
     }
+    
+    /**
+     * Update likes -> increment word likes and word definition likes by 1
+     *
+     * @param array $word_info the word information
+     */
+    public function update_likes($word_info)
+    {
+        $this->update_word_likes($word_info);
+        $this->update_word_definition_likes($word_info);
+    }
 
     /**
      * Add word tags to the database.
@@ -231,6 +242,37 @@ extends ManagerSql
                 $this->error_array[] = $this->error;
             }
         }
+    }
+    
+    /**
+     * Update word definition likes -> increment definition likes by 1
+     *
+     * @param array $word_info the word information
+     */
+    private function update_word_definition_likes($word_info)
+    {
+        $sql = "UPDATE {$this->table_word_definition} "
+             . "SET LIKES = LIKES + 1 "
+             . "WHERE WORD_ID = '{$word_info["WORD_ID"]}' "
+             . "AND ID = '{$word_info["DEFINITION_ID"]}' "
+             ;
+             
+        return $this->query($sql);
+    }
+    
+    /**
+     * Update word likes -> increment word likes by 1
+     *
+     * @param array $word_info the word information
+     */
+    private function update_word_likes($word_info)
+    {
+        $sql = "UPDATE {$this->table_word} "
+             . "SET LIKES = LIKES + 1 "
+             . "WHERE ID = '{$word_info["WORD_ID"]}' "
+             ;
+             
+        return $this->query($sql);
     }
 
     /**

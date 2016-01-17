@@ -50,6 +50,15 @@ else if (php_uname('n') == "Elia-Suardis-iMac.local")
     $config["user_db"] = "jenti";
     $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
 }
+else if (php_uname('n') == "ELIASUARDI-PC")
+{
+	// local development system
+	$config["hostname"] = "localhost";
+	$config["user_name"] = "root";
+	$config["user_pswd"] = "root";
+	$config["user_db"] = "jenti";
+	$config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti";
+}
 else
 {
     // hostmonster system

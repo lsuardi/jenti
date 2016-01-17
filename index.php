@@ -1,5 +1,6 @@
 <?php
 
+
 // Copyright 2015 - NINETY-DEGREES
 
 require_once "JentiConfig.php";
@@ -37,6 +38,7 @@ $session->save_user_start();
         <script src="jquery.mobile.1.4.5/demos/js/jquery.min.js"></script>
         <script src="jquery.mobile.1.4.5/demos/js/jquery.mobile-1.4.5.min.js"></script>
         -->
+        <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
@@ -91,10 +93,11 @@ $session->save_user_start();
             </div>
 
             <div data-role="popup" id="button-guess-popup" class="ui-content jenti-popup jenti-text-center">
-                <a href="#" data-rel="back" 
+                <a href="#" id="close" data-rel="back" 
                    class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
                        <?php echo $catalog[11]; ?></a>
                 <p id="p-guess-popup-content"></p>
+                <div id="div-guess-popup-feedback"></div>
             </div>
             
             <div data-role="popup" id="button-profile-info-popup" class="ui-content jenti-popup">
