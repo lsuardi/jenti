@@ -70,6 +70,9 @@ function render_home()
                 
                 // save word data
                 jQuery.data(document.body, "word_json", json);
+
+                // initialize like
+                jQuery.data(document.body, "like", false);
                 
                 // initialize play
                 showCount = 0;
@@ -99,9 +102,15 @@ function render_home()
         var word_json = jQuery.data(document.body, "word_json");
         var word = word_json.WORD;
         var guess = $("#input-word").val();
+        $("#div-guess-popup-feedback").empty();
         $("#p-guess-popup-content").html(html_guess_popup(word_json, guess));
         if (guess.toUpperCase() === word.toUpperCase())
         {
+            $("#div-guess-popup-feedback").html(html_guess_popup_feedback());
+            
+            // trigger makes jquery reanalyze the html code 
+            // inserted dynamically by html_guess_popup_feedback()
+            $("#div-guess-popup-feedback").trigger("create");
             showCount = word.length;
             
             // save score and other info
@@ -129,6 +138,25 @@ function render_home()
                 }
             });
         }
+        
+        $("#button-like").on('click',function(event)
+        {
+            var catalog = jQuery.data(document.body, "catalog");
+            var text = $("#button-like").text();
+            
+            if(text === catalog[39])
+            {
+                $("#button-like").text(catalog[40]);
+                jQuery.data(document.body, "like", true);
+            }
+            if(text === catalog[40])
+            {
+                $("#button-like").text(catalog[39]);
+                jQuery.data(document.body, "like", false);
+            }
+        });
+        
+        
     });
 
     $("#button-show").click(function(event) 
@@ -153,6 +181,15 @@ function render_home()
             $("#button-show").addClass("ui-disabled");            
         }
     });
+    
+    $(document).on("tap", "#guess-popup-feedback-submit,#close", function(event)
+    {
+        if($("#guess-popup-textarea").length)
+        {
+            var feedback = $("#guess-popup-textarea").val();
+            jQuery.data(document.body, "guess-popup-feedback", feedback);
+        }
+    });
 
     $("#button-guess-popup").bind(
     {
@@ -160,8 +197,44 @@ function render_home()
         popupafterclose: function(event, ui)
         {
         	var word_json = jQuery.data(document.body, "word_json");
+            var catalog = jQuery.data(document.body, "catalog");
         	var word = word_json.WORD;
         	var guess = $("#input-word").val();
+            var like = jQuery.data(document.body, "like");
+            var feedback = jQuery.data(document.body, "guess-popup-feedback");
+            var feedback_data = {};
+            
+            feedback_data["WORD_ID"] = word_json.WORD_ID;
+            feedback_data["DEFINITION_ID"] = word_json.ID;
+            feedback_data["LIKE"] = like;
+            
+            if(feedback.length > 0 && feedback !== catalog[42])
+            {
+                feedback_data["FEEDBACK"] = feedback;
+            }
+            if(like || feedback.length > 0)
+            {
+                $.ajax({
+                    url: "ajax/post_feedback.php",
+                    data: feedback_data,
+                    type: "POST",
+                    dataType : "json",
+                    success: function(json) 
+                    {
+                        if (json.hasOwnProperty("ERROR"))
+                        {
+                            tools_render_error(JSON.stringify(json,null,2)); 
+                        }
+                    },
+                    error: function(xhr, status, errorThrown) 
+                    {
+                        tools_render_error_ajax(xhr, status, errorThrown);
+                    }
+                });
+                
+                jQuery.data(document.body, "guess-popup-feedback", "");
+            }
+            
         	if (guess.toUpperCase() === word.toUpperCase())
         	{
         		$("#button-play").click();
@@ -184,7 +257,7 @@ function html_home()
 
         + '<div id="div-word" data-role="content" class="jenti-text-center">'
         + '  <div id="custom-border-radius" style="display:inline;">'
-        + '    <a href="#button-hint-popup" id="button-hint" data-rel="popup" '
+        + '    <a href="#button-hint-popup" id="button-hint" data-rel="popup" data-position-to="window" '
         + '      class="ui-icon-info ui-btn ui-btn-inline ui-corner-all ui-btn-icon-notext ui-disabled jenti-button"></a>'
         + '  </div>'
         + '  <input name="input-word" id="input-word" value="" type="text" '
@@ -198,7 +271,7 @@ function html_home()
         + '<br>'
 
         + '<div id="div-buttons" data-role="content" class="jenti-text-center">'
-        + '  <a href="#button-guess-popup" id="button-guess" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-disabled">' + catalog[9] + '</a>'
+        + '  <a href="#button-guess-popup" id="button-guess" data-rel="popup" data-position-to="window" class="ui-btn ui-btn-inline ui-corner-all ui-disabled">' + catalog[9] + '</a>'
         + '  <button id="button-play" class="ui-btn ui-btn-inline ui-corner-all">' + catalog[1] + '</button>'
         + '</div>'
 
@@ -280,7 +353,25 @@ function html_guess_popup(word_json, guess)
     }
     
     return html;
-}        
+}     
+
+
+
+function html_guess_popup_feedback()
+{
+    var catalog = jQuery.data(document.body, "catalog");
+    
+    var html
+        = '<textarea id="guess-popup-textarea" name="textarea-2">' + catalog[42] + '</textarea>'
+        + '<a id="button-like" href="#" '
+        + 'class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">'
+        + catalog[39] + '</a>'
+        + '<a id="guess-popup-feedback-submit" href="#" '
+        + 'class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">'
+        + catalog[41] +'</a>';
+    
+    return html;
+}
         
   
   

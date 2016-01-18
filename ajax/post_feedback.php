@@ -16,9 +16,14 @@ if($session->error)
 
 $activity_info["WORD_ID"] = $_REQUEST["WORD_ID"];
 $activity_info["DEFINITION_ID"] = $_REQUEST["DEFINITION_ID"];
-$activity_info["FEEDBACK"] = trim($_REQUEST["FEEDBACK"]);
 
-if ($activity_info["FEEDBACK"])
+if(isset($_REQUEST["FEEDBACK"]))
+    $activity_info["FEEDBACK"] = trim($_REQUEST["FEEDBACK"]);
+
+if(isset($_REQUEST["LIKE"]))
+    $activity_info["LIKE"] = $_REQUEST["LIKE"];
+    
+if ((isset($activity_info["LIKE"])&&$activity_info["LIKE"])||isset($activity_info["FEEDBACK"]))
 {
     $session->save_user_feedback($activity_info);
     if($session->error)
