@@ -16,11 +16,11 @@ extends ManagerSql
     private $enum;
 
     // database tables
-    private $table_word = "WORD";
-    private $table_word_definition = "WORD_DEFINITION";
-    private $table_word_tag = "WORD_TAG";
-    private $table_word_list = "WORD_LIST";
-    private $play_table_prefix = "PLAY";
+    private $table_word = "word";
+    private $table_word_definition = "word_definition";
+    private $table_word_tag = "word_tag";
+    private $table_word_list = "word_list";
+    private $play_table_prefix = "play";
     
     function __construct($config=null) 
     {
@@ -39,9 +39,9 @@ extends ManagerSql
     {
         // identify the table that is used for this user game
         $table_name     = $this->play_table_prefix
-                        . "_" . strtoupper($user_info["LANGUAGE_CODE"])
-                        . (isset($user_info["TAG"]) 
-                            ? "_" . strtoupper($user_info["TAG"]) 
+                        . "_" . $user_info["LANGUAGE_CODE"]
+                        . (isset($user_info["TAG"])
+                            ? "_" . $user_info["TAG"]
                             : "")
                         ;
         

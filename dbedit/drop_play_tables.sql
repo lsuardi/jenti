@@ -1,7 +1,8 @@
 
 /*USE JENTI;*/
 
-DROP TABLE PLAY_IT;
+DROP TABLE play_it;
+DROP TABLE play_en;
 /*
 DROP TABLE PLAY_IT_ANATOMIA;
 */

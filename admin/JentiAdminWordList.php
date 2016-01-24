@@ -7,7 +7,7 @@ jenti_admin_page_header();
 echo '<h2>WORD LIST</h2>';
 
 $config["debug"] = 0;
-$config["table_name"]   = 'WORD_LIST';
+$config["table_name"]   = 'word_list';
 $config["table_pk"]     = 'ID';
 $config["table_pk_auto"] = 'yes';
 $config["action"]       = 'IUD'; // insert, update, delete

@@ -8,9 +8,9 @@ class JentiUser
 extends ManagerSql
 {
     // database tables
-    private $table_user = "USER";
-    private $table_user_word = "USER_WORD";
-    private $table_user_activity = "USER_ACTIVITY";
+    private $table_user = "user";
+    private $table_user_word = "user_word";
+    private $table_user_activity = "user_activity";
     
     function __construct($config=null) 
     {

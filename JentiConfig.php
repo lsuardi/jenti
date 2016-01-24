@@ -61,14 +61,14 @@ else if (php_uname('n') == "ELIASUARDI-PC")
 }
 else
 {
-    // hostmonster system
+    // hostmonster system jenti.org domain
     //$config["cache_root"] = "/home1/ninetyde/public_html/jenti/dev/cache";
     //$config["log_file"] = "/home1/ninetyde/public_html/jenti/dev/log.txt";
     $config["hostname"] = "localhost";
     $config["user_name"] = "ninetyde_jenti01";
     $config["user_pswd"] = "Rondin@2015";
     $config["user_db"] = "ninetyde_jenti";
-    $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "/jenti/dev";
+    $config["docroot"] = str_replace( "\\", "/", $_SERVER['DOCUMENT_ROOT']) . "";
 }
 
 $config["cache_root"] = $config["docroot"]."/cache";

@@ -50,7 +50,7 @@ class JentiSession
     {
         $this->config = $config;
 //        $this->duration = time() + 60*60; // 1 hour
-        $this->duration = time() + 60*5; // 5 minutes
+        $this->duration = time() + 60 * 60 * 24 * 30; // 30 days
         $this->user_mgr = null;
         $this->init();
     }
