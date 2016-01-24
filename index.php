@@ -93,11 +93,8 @@ $session->save_user_start();
             </div>
 
             <div data-role="popup" id="button-guess-popup" class="ui-content jenti-popup jenti-text-center">
-                <a href="#" id="close" data-rel="back" 
-                   class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
-                       <?php echo $catalog[11]; ?></a>
                 <p id="p-guess-popup-content"></p>
-                <div id="div-guess-popup-feedback"></div>
+                <div id="div-guess-popup-feedback" class="jenti-text-center"></div>
             </div>
             
             <div data-role="popup" id="button-profile-info-popup" class="ui-content jenti-popup">

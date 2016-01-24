@@ -161,7 +161,7 @@ function render_profile()
         
                 + '<BR><BR>'
         
-                + '<label>' + catalog[33] + catalog[34] + '</label>'
+                + '<label>' + catalog[33] + '</label>'
                 + '<input data-clear-btn="false" name="input-birth-date" id="input-birth-date" '
                 + '  placeholder="' + catalog[35] + '" class="ui-body-a ui-corner-all jenti-login-input">'
         
@@ -190,11 +190,11 @@ function render_profile()
         // TODO validate email
         var email = tools_validate_string("#input-email", catalog[28]);
         var pwd = tools_validate_string("#input-pwd", catalog[29]);
-        var birthdate = tools_validate_string("#input-birth-date", catalog[33]);
+        var birthdate = $("#input-birth-date").val().trim();
         var name = $("#input-name").val().trim();
                 
         // save profile
-        if (email && pwd && birthdate)
+        if (email && pwd)
         {
             $.ajax({
                 url: "ajax/post_profile.php",

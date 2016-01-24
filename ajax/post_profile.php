@@ -16,7 +16,10 @@ if($session->error)
 $user_array["EMAIL"] = $_REQUEST["EMAIL"];
 $user_array["PASSWORD"] = $_REQUEST["CITY"];
 $user_array["NAME"] = $_REQUEST["NAME"];
-$user_array["BIRTHDATE"] = $_REQUEST["BIRTHDATE"];
+if (strlen($_REQUEST["BIRTHDATE"]) > 0)
+{
+	$user_array["BIRTHDATE"] = $_REQUEST["BIRTHDATE"];
+}
 
 $session->save_user_info($user_array);
 if($session->error)

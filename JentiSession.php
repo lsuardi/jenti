@@ -141,19 +141,21 @@ class JentiSession
             }
             $this->error = $word->error;
         }
-        
-        $user = new JentiUser($this->config);
-        if (!$user->error)
-        {
-            $feedback_info["TYPE"] = ACTIVITY_FEEDBACK;
-            if ($this->is_user_authenticated())
-            {
-                $feedback_info["EMAIL"] = $this->email;
-            }
-            $user->add_user_activity($feedback_info);
-        }
 
-        $this->error = $user->error;
+        if(!$this->error && isset($feedback_info["FEEDBACK"]))
+        {
+            $user = new JentiUser($this->config);
+            if (!$user->error)
+            {
+                $feedback_info["TYPE"] = ACTIVITY_FEEDBACK;
+                if ($this->is_user_authenticated())
+                {
+                    $feedback_info["EMAIL"] = $this->email;
+                }
+                $user->add_user_activity($feedback_info);
+            }
+            $this->error = $user->error;
+        }
     }
 
     /**

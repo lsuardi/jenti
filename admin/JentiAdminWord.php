@@ -13,7 +13,7 @@ $config["table_pk_auto"] = 'yes';
 $config["action"]       = 'IUD'; // insert, update, delete
 $config["table_sql_select"] = "
 SELECT WO.ID, WO.WORD, WO.TYPE, WO.LANGUAGE_CODE, WD.TAGS, 
-       WD.DEFINITION, WD.SOURCE_NAME
+       WD.DEFINITION, WD.SOURCE_NAME, WD.LIKES
 FROM WORD WO, WORD_DEFINITION WD
 WHERE WD.WORD_ID = WO.ID
 ";
