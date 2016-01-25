@@ -3,39 +3,35 @@
 
 $(document).ready(function() 
 {
-    if(WURFL.is_mobile)
-    {
-        var catalog = jQuery.data(document.body, "catalog");
-        if (!catalog)
-        {
-            $.ajax({
-                url: "ajax/get_catalog.php",
-                type: "GET",
-                dataType : "json",
-                success: function(json) 
-                {
-                    // save catalog
-                    jQuery.data(document.body, "catalog", json);
+        $.ajax({
+            url: "ajax/get_catalog.php",
+            type: "GET",
+            dataType : "json",
+            success: function(json) 
+            {
+                // save catalog
+                jQuery.data(document.body, "catalog", json);
 
-                    $("#sp-logo").html(html_logo());
-                    $("#sp-logo").delay(0).animate({ opacity: 1 }, 3000);
-
-                    $("#sp-button-play").click(function(event)
-                    {
-                        window.location.href = "index.php";
-                    });
-                },
-                error: function(xhr, status, errorThrown) 
+                if(WURFL.is_mobile)
                 {
-                    tools_render_error_ajax(xhr, status, errorThrown);
+	                $("#sp-logo").html(html_logo());
+	                $("#sp-logo").delay(0).animate({ opacity: 1 }, 3000);
+	
+	                $("#sp-button-play").click(function(event)
+	                {
+	                    window.location.href = "index.php";
+	                });
+            	}
+                else
+                {
+                    window.location.href = "about.html";
                 }
-            });
-        }
-    }
-    else
-    {
-        window.location.href = "about.html";
-    }
+            },
+            error: function(xhr, status, errorThrown) 
+            {
+                tools_render_error_ajax(xhr, status, errorThrown);
+            }
+        });
 }); 
 
 function html_logo()
