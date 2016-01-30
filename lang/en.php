@@ -36,8 +36,7 @@ $catalog[26]  = "English,Italian";
 $catalog[27]  = "en,it";
 $catalog[28]  = "Email";
 $catalog[29]  = "Password";
-$catalog[30]  = "Enter a working personal email address and password. An email will "
-              . "be sent to activate your Jenti profile. When you login, Jenti "
+$catalog[30]  = "Enter a working personal email address and password. When you login, Jenti "
               . "remembers your score, the words you guess and you participate in "
               . "the game rankings."
               . "<BR><BR>"
@@ -56,5 +55,6 @@ $catalog[39]  = "Like";
 $catalog[40]  = "Unlike";
 $catalog[41]  = "Suggest";
 $catalog[42]  = "Optional Suggestion";
+$catalog[43]  = "Ranking";
 
 ?>

@@ -11,6 +11,7 @@ function render_options()
         + '<button id="button-login" class="ui-btn ui-corner-all">' + catalog[2] + '</button>'
         + '<button id="button-language" class="ui-btn ui-corner-all">' + catalog[3] + '</button>'
         + '<button id="button-skin" class="ui-btn ui-corner-all">' + catalog[25] + '</button>'
+        + '<button id="button-ranking" class="ui-btn ui-corner-all">' + catalog[43] + '</button>'
         + '<button id="button-play" class="ui-btn ui-corner-all">' + catalog[1] + '</button>'
         ;
     
@@ -35,7 +36,7 @@ function render_options()
     {
         render_options_language();
     });
-    
+
     $("#button-skin").click(function(event) 
     {
         // save score and other info
@@ -54,6 +55,30 @@ function render_options()
                 // reload index and render options page
                 $.cookie("jenti_render", "options");
                 window.location.href = "index.php";
+            },
+            error: function(xhr, status, errorThrown) 
+            {
+                tools_render_error_ajax(xhr, status, errorThrown); 
+            }
+        });
+    });
+
+    $("#button-ranking").click(function(event) 
+    {
+        // get ranking
+        $.ajax({
+            url: "ajax/get_ranking.php",
+            type: "GET",
+            dataType : "json",
+            success: function(json) 
+            {
+                if (json.hasOwnProperty("ERROR"))
+                {
+                    tools_render_error(JSON.stringify(json,null,2)); 
+                    return;
+                }
+
+                render_ranking(json);
             },
             error: function(xhr, status, errorThrown) 
             {
@@ -215,7 +240,7 @@ function render_profile()
                     }
 
                     // automatically login after registration
-                    ajax_login(email, pwd, function(json) 
+                    ajax_login(email, pwd, function(json)
                     {
                         // user registered message
                         alert(catalog[38]);
@@ -228,6 +253,32 @@ function render_profile()
             });            
         }
     });
+}
+
+function render_ranking(userArray)
+{
+    var html    = '<BR>';
+    for (i = 0; i < userArray.length; i++)
+    {
+    	var id = 'button-play-' + i;
+        html += '<button id="' + id + '" class="ui-btn ui-corner-all">'
+             + userArray[i].SCORE + ' '
+             + userArray[i].NAME + '</button>'
+             ;
+    }
+
+    $("#div-content").html(html);
+
+    for (i = 0; i < userArray.length; i++)
+    {
+    	var id = 'button-play-' + i;
+        $("#" + id).css("text-align", "left"); 
+        $("#" + id).click(function(event) 
+        {
+            render_home();
+        });
+    }
+
 }
 
 function ajax_login(email, pwd, success_callback)

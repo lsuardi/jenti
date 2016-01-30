@@ -12,8 +12,8 @@ $(document).ready(function()
                 // save catalog
                 jQuery.data(document.body, "catalog", json);
 
-                if(WURFL.is_mobile)
-                {
+                //if(WURFL.is_mobile)
+                //{
 	                $("#sp-logo").html(html_logo());
 	                $("#sp-logo").delay(0).animate({ opacity: 1 }, 3000);
 	
@@ -21,11 +21,11 @@ $(document).ready(function()
 	                {
 	                    window.location.href = "index.php";
 	                });
-            	}
-                else
-                {
-                    window.location.href = "about.html";
-                }
+            	//}
+                //else
+                //{
+                //    window.location.href = "about.html";
+                //}
             },
             error: function(xhr, status, errorThrown) 
             {

@@ -24,12 +24,12 @@ extends ManagerSql
      */
     public function add_user($user_info)
     {
-        if (!isset($user_info["NAME"]))
+        if (!isset($user_info["NAME"]) || strlen($user_info["NAME"]) == 0)
         {
             $pos = strpos($user_info["EMAIL"], "@");
-            $user_info["NAME"] = 
-                $pos === FALSE 
-                ? $user_info["EMAIL"] 
+            $user_info["NAME"] =
+                $pos === FALSE
+                ? $user_info["EMAIL"]
                 : substr($user_info["EMAIL"], 0 , $pos)
                 ;
         }
@@ -99,7 +99,7 @@ extends ManagerSql
 
         return $user_info;
     }
-    
+
     /**
      * Get user.
      *
@@ -109,9 +109,9 @@ extends ManagerSql
     public function get_user($email)
     {
         $sql = "SELECT * FROM {$this->table_user} "
-             . "WHERE EMAIL = '{$email}' "
-             ;
-
+        . "WHERE EMAIL = '{$email}' "
+        ;
+    
         $user_array = $this->query_all($sql);
         if ($this->error)
         {
@@ -123,9 +123,31 @@ extends ManagerSql
             $this->error = "User not found.";
             return null;
         }
-        
+    
         return $user_array[0];
     }
 
+    /**
+     * Get user ranking
+     *
+     * @return array of rank, user
+     */
+    public function get_ranking()
+    {
+        $sql = "SELECT SCORE, NAME FROM {$this->table_user} "
+        . "WHERE SCORE > 0 "
+        . "ORDER BY SCORE DESC "
+        . "LIMIT 10 "
+        ;
+    
+        $user_array = $this->query_all($sql);
+        if ($this->error)
+        {
+            return null;
+        }
+
+        return $user_array;
+    }
+    
 }
 ?>
