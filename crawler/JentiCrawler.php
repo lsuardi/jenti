@@ -2,9 +2,10 @@
 
 // Copyright 2015 - NINETY-DEGREES
 
+require_once "../JentiWord.php";
 require_once "JentiRequestWiktionary.php";
 require_once "JentiRequestWiktionaryEN.php";
-require_once "JentiWord.php";
+require_once "JentiRequestMerriamWebster.php";
 
 ///////////////////////////////////////////////////////////////////
 // Crawl web pages searching for words and word definitions
@@ -76,12 +77,15 @@ class JentiCrawler
             {
                 foreach($dictionary_word_array as $word_info)
                 {
-                    $jword->add_word($word_info);
-                    
+                    if ($this->config["save_words"] == true)
+                    {
+                        $jword->add_word($word_info);
+                    }
                     $word_info["ERROR_ARRAY"] = $jword->error_array;
-                    $this->echo_word_info($word_info);      
+                    $this->echo_word_info($word_info);
                 }
             }
+
             if (count($dictionary_word_array) == 0)
             {
                 // data source cannot provide this word
@@ -197,11 +201,15 @@ class JentiCrawler
     {
         switch ($this->config["default_source"])
         {
-            case "Wiktionary": 
+            case "Merriam-Webster":
+            {
+                return new JentiRequestMerriamWebster($this->config);
+            }
+            case "Wiktionary":
             {
                 return new JentiRequestWiktionaryEN($this->config);
             }
-            default: 
+            default:
             {
                 return new JentiRequestWiktionary($this->config);
             }

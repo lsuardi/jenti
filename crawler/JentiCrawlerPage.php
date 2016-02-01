@@ -15,7 +15,7 @@
 
   <title>JENTI CRAWL</title>
 	
-  <script language="JavaScript" type="text/javascript">
+  <script type="text/javascript">
     function scroll_log()
     { log.scrollTop = log.scrollHeight;
     }
@@ -43,9 +43,9 @@
 
 <?php
 
-require_once "JentiConfig.php";
-require_once "JentiRequestWiktionary.php";
-require_once "JentiWord.php";
+require_once "../JentiConfig.php";
+require_once "../JentiWord.php";
+require_once "JentiRequestWiktionaryEN.php";
 
 //////////////////////////////////////////////////////////////////////////
 // logging functions
@@ -85,9 +85,7 @@ function echo_msg_flush( $msg)
 ini_set('default_socket_timeout', 36000);
 ini_set('max_execution_time', 36000);
 
-$words = explode(PHP_EOL, "guerra
-combattere
-sanguinoso");
+$words = explode(PHP_EOL, "word");
 
 $request = new JentiRequestWiktionary($config);
 $jenti_word = new JentiWord($config);

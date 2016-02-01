@@ -226,17 +226,18 @@ class JentiSession
             $this->user_mgr = new JentiUser($this->config);
             $this->user = $this->user_mgr->get_user($this->email);
 
-            // override cookie when session available
+            // override user cookies when session available
             $this->score = $this->user["SCORE"];
+            setcookie(COOKIE_SCORE, $this->score, $this->duration, "/");
         }
-        
+
         // load $catalog from file
         $catalog_path = $config["docroot"] . "/lang/{$this->language_code}.php";
         require_once($catalog_path);
         
         $this->catalog = $catalog;
     }
-    
+
     /**
      * Derive language code from Accept-Language header from browser.
      * 
