@@ -10,7 +10,8 @@ require_once "../JentiConfig.php";
 require_once "../crawler/JentiCrawler.php";
 require_once "TestSupport.php";
 
-$config["cache_on"] = false;
+$config["debug"] = 1;
+$config["cache_on"] = true;
 $config["default_source"] = "Merriam-Webster";
 $config["save_words"] = false;
 //$config["default_source"] = "Wiktionary";

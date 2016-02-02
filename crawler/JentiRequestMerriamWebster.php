@@ -46,52 +46,52 @@ extends JentiRequest
     {
         $word_array = array();
 
-        $sostantivo_definitions = $this->get_word_definitions_from_h3_span(
-            $this->xpath->query("/html/body/div/div/div/h3/span[@id='Sostantivo']"));
-        if (count($sostantivo_definitions) > 0)
+        $simple_definition = $this->xpath->query(
+            "/html/body/div/div/div/div/div/main/article/div/div/div/div/h2[text()='Simple Definition of ']");
+        if (count($simple_definition) > 0)
         {
-            $word_data["WORD"] = $word;
-            $word_data["TYPE"] = "sostantivo";
-            $word_data["LANGUAGE_CODE"] = $this->language_code;
-            $word_data["DEFINITION_ARRAY"] = $sostantivo_definitions;
+            $parent = $simple_definition->item(0)->parentNode->parentNode->parentNode;
+            $definition_nodes = $this->xpath->query("div/ul/li/p/span", $parent);
+            
+            $i = 0;
+            $definitions_array = array();
+            foreach ($definition_nodes as $definition)
+            {
+                $definition_text = utf8_decode($definition->childNodes->item(1)->textContent);
 
-            $word_array[] = $word_data;
-        }
+                $definitions_array[$i]["DEFINITION"] = trim(preg_replace('/\s+/', ' ', $definition_text));
+                $definitions_array[$i]["DEFINITION_SHORT"] = substr(trim(preg_replace('/\s+/', '', $definition_text)), 0, 10);
+                //$definitions_array[$i]["TAGS"] = $tags;
+                //$definitions_array[$i]["TAGS_ARRAY"] = $definition_tags_array;
+                $definitions_array[$i]["SOURCE_NAME"] = $this->service_name;
+                $definitions_array[$i]["SOURCE_URL"] = $this->service_endpoint;
+                $i = $i + 1;
 
-        $verbo_definitions = $this->get_word_definitions_from_h3_span(
-            $this->xpath->query("/html/body/div/div/div/h3/span[@id='Verbo']"));
-        if (count($verbo_definitions) > 0)
-        { 
-            $word_data["WORD"] = $word;
-            $word_data["TYPE"] = "verbo";
-            $word_data["LANGUAGE_CODE"] = $this->language_code;
-            $word_data["DEFINITION_ARRAY"] = $verbo_definitions;
+                $this->debug_echo_dom($definition->childNodes->item(1), 0, null, null);
+            }
 
-            $word_array[] = $word_data;
-        }
+            if ($i > 0)
+            {
+                $word_data["WORD"] = $word;
+                $word_data["TYPE"] = "noun";
+                $word_data["LANGUAGE_CODE"] = $this->language_code;
+                $word_data["DEFINITION_ARRAY"] = $definitions_array;
 
-        $aggettivo_definitions = $this->get_word_definitions_from_h3_span(
-            $this->xpath->query("/html/body/div/div/div/h3/span[@id='Aggettivo']"));
-        if (count($aggettivo_definitions) > 0)
-        { 
-            $word_data["WORD"] = $word;
-            $word_data["TYPE"] = "aggettivo";
-            $word_data["LANGUAGE_CODE"] = $this->language_code;
-            $word_data["DEFINITION_ARRAY"] = $aggettivo_definitions;
+                $word_array[] = $word_data;
+            }
+         }
 
-            $word_array[] = $word_data;
-        }
-
+        /*
         if (count($word_array) > 0)
         {
             // add more words to first word
             $word_array[0]["MORE_WORDS"] = $this->get_more_words_from_links(
                 $this->xpath->query("/html/body/div/div/div/ul/li/a"));
         }
-
+*/
         if (count($word_array) == 0)
         { 
-            $this->error = "JentiRequestWiktionary: Did not find words at url " . $this->url;
+            $this->error = "JentiRequestMerriamWebster: Did not find words at url " . $this->url;
         }
 
         return($word_array);
