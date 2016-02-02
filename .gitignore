@@ -2,6 +2,9 @@
 .project
 *.prefs
 .settings/org.eclipse.wst.common.project.facet.core.xml
-/nbproject/private/
 nbproject
 index.html
+jentis
+jentis_first
+cache
+.gitignore
