@@ -27,6 +27,7 @@ extends ManagerSql
         parent::__construct($config);
 
         $this->config = $config;
+        $this->error_array = array();
     }
 
     /**
@@ -289,7 +290,7 @@ extends ManagerSql
                 $word_list_info["WORD"] = $word;
                 $word_list_info["LANGUAGE_CODE"] = $word_info["LANGUAGE_CODE"];
                 $this->query_insert($this->table_word_list, $word_list_info);
-                if ($this->error)
+                if ($this->error && !strpos($this->error, "[1062:"))
                 {
                     $this->error_array[] = $this->error;
                 }

@@ -170,12 +170,16 @@ class JentiCrawler
     { 
         $error_array = $word_info["ERROR_ARRAY"];
         $error_count = count($error_array);
+        $examples_count = isset($word_info["EXAMPLES_ARRAY"]) ? count($word_info["EXAMPLES_ARRAY"]) : 0;
+        $more_words_count = isset($word_info["MORE_WORDS"]) ? count($word_info["MORE_WORDS"]) : 0;
         $this->echo_msg_flush
             ("ERRORS [{$error_count}] "
             ."WORD [{$word_info["WORD"]}] "
             ."TYPE [{$word_info["TYPE"]}] "
             ."DEFINITION [{$word_info["DEFINITION_ARRAY"][0]["DEFINITION"]}] "
             ."TAGS [{$word_info["DEFINITION_ARRAY"][0]["TAGS"]}] "
+            ."EXAMPLES [{$examples_count}] "
+            ."MORE WORDS [{$more_words_count}] "
             );
 
         // log errors except duplicates
