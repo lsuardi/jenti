@@ -8,7 +8,7 @@ $config["cache_on"] = true;
 $config["wait"] = 0;
 
 $request = new JentiRequestMerriamWebster($config);
-$result = $request->get_word("walk");
+$result = $request->get_word("sock");
 if ($request->error)
 {
     echo("<BR><BR>".$request->error);

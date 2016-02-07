@@ -13,8 +13,11 @@ class   JentiRequestMerriamWebster
 extends JentiRequest
 {
     public $language_code = "en";
+    
     private $type_array = array('noun', 'adjective', 'verb');
-    private $word_entry_index_next = 1;
+    private $word_array = null;
+    private $word_type = null;
+
     
     
     function __construct( $args=null)
@@ -51,8 +54,26 @@ extends JentiRequest
     //////// parse results and return relevant data
     private function get_word_data( $word)
     {
-        $this->word_entry_index_next = 1;
-        $word_array = array();
+        $this->word_array = array();
+
+        $div_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div');
+        if ($div_nodes->length)
+        {
+            foreach ($div_nodes as $div)
+            {
+                echo "<BR>div node<BR>";
+                $this->debug_echo_dom($div, 0, null, null);
+                echo "<BR>";
+
+                // does div contain word type
+                $type_em_nodes = $this->xpath->query('div/div/span/em', $div);
+                if ($type_em_nodes->length > 0)
+                {
+                    $this->word_type = $type_em_nodes->item(0)->textContent;
+                    echo "<BR>type {$this->word_type}<BR>";
+                }
+            }
+        }
 
         // search for noun, adjective, verb
         /*
@@ -74,11 +95,16 @@ extends JentiRequest
         */
 
         // find word entries
+        /*
         $word_entry_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div/div/div/div/span');
         if ($word_entry_nodes->length)
         {
             foreach ($word_entry_nodes as $entry_node)
             {
+                $this->debug_echo_dom($entry_node, 0, null, null);
+                echo "<BR>";
+                continue;
+
                 $word_entry_index = intval($entry_node->textContent);
                 if ($word_entry_index == $this->word_entry_index_next)
                 {
@@ -90,7 +116,7 @@ extends JentiRequest
                 
             }
         }
-        
+        */
         if (count($word_array) == 0)
         { 
             $this->error = "JentiRequestMerriamWebster: Did not find words at url " . $this->url;
@@ -105,11 +131,20 @@ extends JentiRequest
     {
         $word_type = $word_type_node->textContent;
         if ((array_search($word_type, $this->type_array) !== FALSE)
-        &&  !$this->word_type_exists($word_type, $word_array))
+        &&  !isset($word_array[$word_type]))
         {
-            $content_node = $word_type_node->parentNode->parentNode->parentNode->parentNode;
+            echo "<BR>word type<BR>";
+            $div_node = $word_type_node->parentNode->parentNode;
+            $this->debug_echo_dom($div_node, 0, null, null);
+            echo "<BR>";
+            echo "<BR>next sibling<BR>";
+            $this->debug_echo_dom($div_node->nextSibling->nextSibling->nextSibling, 0, null, null);
+            echo "<BR>";
+            return;
+
             $i = 0;
             $definitions_array = array();
+
 
             // simple definitions
             $definition_nodes = $this->xpath->query("div/div/ul/li/p/span", $content_node);
@@ -147,7 +182,7 @@ extends JentiRequest
                 $word_data["LANGUAGE_CODE"] = $this->language_code;
                 $word_data["DEFINITION_ARRAY"] = $definitions_array;
 
-                $word_array[] = $word_data;
+                $word_array[$word_type] = $word_data;
             }
         }
     }
@@ -303,21 +338,7 @@ extends JentiRequest
             $word_array[0]["MORE_WORDS"] = $more_words;
         }
     }
-    
-    
-    
-    private function word_type_exists($word_type, $word_array)
-    {
-        foreach ($word_array as $word)
-        {
-            if ($word["TYPE"] == $word_type)
-            {
-                return(TRUE);
-            }
-        }
-        return(FALSE);
-    }
-    
+        
 
     
     private function merriam_wordoftheday()
