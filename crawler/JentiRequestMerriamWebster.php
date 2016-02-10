@@ -14,6 +14,7 @@ extends JentiRequest
 {
     public $language_code = "en";
     
+    private $word = null;
     private $type_array = array('noun', 'adjective', 'verb');
     private $word_array = null;
     private $word_type = null;
@@ -54,6 +55,7 @@ extends JentiRequest
     //////// parse results and return relevant data
     private function get_word_data( $word)
     {
+        $this->word = $word;
         $this->word_array = array();
 
         $div_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div');
@@ -80,6 +82,8 @@ extends JentiRequest
                         $this->word_array[$this->word_type]["TYPE"] = $this->word_type;
                         $this->word_array[$this->word_type]["LANGUAGE_CODE"] = $this->language_code;
                         $this->word_array[$this->word_type]["DEFINITION_ARRAY"] = array();
+                        $this->word_array[$this->word_type]["EXAMPLES_ARRAY"] = array();
+                        $this->word_array[$this->word_type]["MORE_WORDS"] = array();
 
                         echo "<BR>type {$this->word_type}<BR>";
                         
@@ -88,8 +92,10 @@ extends JentiRequest
                 }
                 else
                 {
-                    // look for full definition div
+                    // look for more definition div
                     $this->process_div_definitions($div);
+                    $this->process_div_examples($div);
+                    $this->process_div_more_words($div);
                 }
                                 
                 echo "<BR>div node<BR>";
@@ -98,48 +104,6 @@ extends JentiRequest
             }
         }
 
-        // search for noun, adjective, verb
-        /*
-        $word_type_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div/div/div/span/em');
-        if ($word_type_nodes->length)
-        {
-            foreach ($word_type_nodes as $type_node)
-            {
-                // word definitions
-                $this->process_word_type_node($word, $type_node, $word_array);
-            }
-            if (count($word_array) > 0)
-            {
-                // add examples and more words
-                $this->process_examples($word_array);
-                $this->process_more_words($word_array);
-            }
-        }
-        */
-
-        // find word entries
-        /*
-        $word_entry_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div/div/div/div/span');
-        if ($word_entry_nodes->length)
-        {
-            foreach ($word_entry_nodes as $entry_node)
-            {
-                $this->debug_echo_dom($entry_node, 0, null, null);
-                echo "<BR>";
-                continue;
-
-                $word_entry_index = intval($entry_node->textContent);
-                if ($word_entry_index == $this->word_entry_index_next)
-                {
-                    // find word definitions
-                    $this->process_word_entry($word, $entry_node, $word_array);
-                   
-                    $this->word_entry_index_next = $this->word_entry_index_next + 1;
-                }
-                
-            }
-        }
-        */
         if (count($this->word_array) == 0)
         { 
             $this->error = "JentiRequestMerriamWebster: Did not find words at url " . $this->url;
@@ -152,6 +116,14 @@ extends JentiRequest
     
     private function process_div_definitions($div_node)
     {
+        $h2_full_definition_nodes = $this->xpath->query("div/h2", $div_node);
+        if (($h2_full_definition_nodes->length > 0)
+        &&  (strpos($h2_full_definition_nodes->item(0)->textContent, "Full Definition") !== FALSE))
+        {
+            // skip full definitions
+            return;
+        }
+        
         $i = sizeof($this->word_array[$this->word_type]["DEFINITION_ARRAY"]);
 
         // definitions
@@ -160,14 +132,24 @@ extends JentiRequest
         {
             foreach ($definition_nodes as $span)
             {
-                //$definition_text = utf8_decode($definition->textContent);
-                $span_children = $span->childNodes;
-                foreach ($span_children as $span_child)
+                $span_child = $span->firstChild;
+                while ($span_child)
                 {
                     if (trim($span_child->textContent) == ":")
+                    {
+                        $span_child = $span_child->nextSibling;
                         break;
+                    }                    
+                    $span_child = $span_child->nextSibling;
                 }
-                $definition_text = $span_child->nextSibling->textContent;
+                
+                $definition_text = "";
+                while ($span_child)
+                {
+                    $definition_text = $definition_text . " " . trim($span_child->textContent);
+                    $span_child = $span_child->nextSibling;
+                }
+                
                 $definition_text = htmlentities($definition_text, null, 'utf-8');
                 $definition_text = str_replace("&nbsp;", "", $definition_text);
                 $definition_text = html_entity_decode($definition_text, null, 'utf-8');
@@ -187,160 +169,7 @@ extends JentiRequest
     }
 
         
-    
-    private function process_word_type_node($word, $word_type_node, &$word_array)
-    {
-        $word_type = $word_type_node->textContent;
-        if ((array_search($word_type, $this->type_array) !== FALSE)
-        &&  !isset($word_array[$word_type]))
-        {
-            echo "<BR>word type<BR>";
-            $div_node = $word_type_node->parentNode->parentNode;
-            $this->debug_echo_dom($div_node, 0, null, null);
-            echo "<BR>";
-            echo "<BR>next sibling<BR>";
-            $this->debug_echo_dom($div_node->nextSibling->nextSibling->nextSibling, 0, null, null);
-            echo "<BR>";
-            return;
-
-            $i = 0;
-            $definitions_array = array();
-
-
-            // simple definitions
-            $definition_nodes = $this->xpath->query("div/div/ul/li/p/span", $content_node);
-            if ($definition_nodes->length)
-            {
-                foreach ($definition_nodes as $definition)
-                {
-                    $definition_text = utf8_decode($definition->childNodes->item(1)->textContent);
-
-                    $definitions_array[$i]["DEFINITION"] = trim(preg_replace('/\s+/', ' ', $definition_text));
-                    $definitions_array[$i]["DEFINITION_SHORT"] = substr(trim(preg_replace('/\s+/', '', $definition_text)), 0, 10);
-                    $definitions_array[$i]["TAGS"] = null;
-                    //$definitions_array[$i]["TAGS_ARRAY"] = $definition_tags_array;
-                    $definitions_array[$i]["SOURCE_NAME"] = $this->service_name;
-                    $definitions_array[$i]["SOURCE_URL"] = $this->service_endpoint;
-                    $i = $i + 1;
-                }
-            }
-
-            // numbered definitions
-            $definition_nodes = $this->xpath->query("div/div/ol/li/p/span", $content_node);
-            if ($definition_nodes->length)
-            {
-                foreach ($definition_nodes as $definition)
-                {
-                    $this->debug_echo_dom($definition, 0, null, null);
-                    echo "<BR>";
-                }                
-            }
-
-            if ($i > 0)
-            {
-                $word_data["WORD"] = $word;
-                $word_data["TYPE"] = $word_type;
-                $word_data["LANGUAGE_CODE"] = $this->language_code;
-                $word_data["DEFINITION_ARRAY"] = $definitions_array;
-
-                $word_array[$word_type] = $word_data;
-            }
-        }
-    }
-    
-    
-    
-    private function process_word_entry($word, $word_entry_node, &$word_array)
-    {
-        $content_node = $word_entry_node->parentNode->parentNode->parentNode;
-        $word_type_nodes = $this->xpath->query("div/span/em", $content_node);
-        if ($word_type_nodes->length > 0)
-        {
-            $i = 0;
-            $definitions_array = array();
-
-            // definitions
-            $definition_nodes = $this->xpath->query("div/*/li/p/span", $content_node);
-            if ($definition_nodes->length)
-            {
-                foreach ($definition_nodes as $span)
-                {
-                    //$definition_text = utf8_decode($definition->textContent);
-                    $span_children = $span->childNodes;
-                    foreach ($span_children as $span_child)
-                    {
-                        if (trim($span_child->textContent) == ":")
-                            break;
-                    }
-                    $definition_text = $span_child->nextSibling->textContent;
-                    $definition_text = htmlentities($definition_text, null, 'utf-8');
-                    $definition_text = str_replace("&nbsp;", "", $definition_text);
-                    $definition_text = html_entity_decode($definition_text, null, 'utf-8');
-
-                    $definitions_array[$i]["DEFINITION"] = trim(preg_replace('/\s+/', ' ', $definition_text), " �");
-                    $definitions_array[$i]["DEFINITION_SHORT"] = substr(trim(preg_replace('/\s+/', '', $definition_text)), 0, 10);
-                    $definitions_array[$i]["TAGS"] = null;
-                    //$definitions_array[$i]["TAGS_ARRAY"] = $definition_tags_array;
-                    $definitions_array[$i]["SOURCE_NAME"] = $this->service_name;
-                    $definitions_array[$i]["SOURCE_URL"] = $this->service_endpoint;
-                    $i = $i + 1;
-                }
-            }
-
-            $word_type = trim($word_type_nodes->item(0)->textContent);
-
-            if ($i > 0)
-            {
-                $word_data["WORD"] = $word;
-                $word_data["TYPE"] = $word_type;
-                $word_data["LANGUAGE_CODE"] = $this->language_code;
-                $word_data["DEFINITION_ARRAY"] = $definitions_array;
-
-                if (isset($word_array[$word_type]))
-                {
-                    // add more definitions to same word
-                    foreach ($definitions_array as $definition)
-                    {
-                        $word_array[$word_type]["DEFINITION_ARRAY"][] = $definition;
-                    }
-                }
-                else
-                {
-                    // new word
-                    $word_array[$word_type] = $word_data;
-                }
-            }
-
-            //$this->debug_echo_dom($content_node, 0, null, null);
-            //echo "<BR>";
-
-        }
-
-                
-        return;
-        
-        $word_type = $word_type_node->textContent;
-        if ((array_search($word_type, $this->type_array) !== FALSE)
-        &&  !$this->word_type_exists($word_type, $word_array))
-        {
-            $content_node = $word_type_node->parentNode->parentNode->parentNode->parentNode;
-
-            // numbered definitions
-            $definition_nodes = $this->xpath->query("div/div/ol/li/p/span", $content_node);
-            if ($definition_nodes->length)
-            {
-                foreach ($definition_nodes as $definition)
-                {
-                    $this->debug_echo_dom($definition, 0, null, null);
-                    echo "<BR>";
-                }                
-            }
-
-        }
-    }
-
-    
-    
+       
     private function div_in_kids_section($div_node)
     {
         // /html/body/div/div/div/div/div/main/article/h2/#text [0] = SOCK Defined for Kids 
@@ -360,37 +189,48 @@ extends JentiRequest
     
     
     
-    private function process_examples(&$word_array)
+    private function process_div_examples($div_node)
     {
-        $word_count = 0;
+        $i = sizeof($this->word_array[$this->word_type]["EXAMPLES_ARRAY"]);
 
-        // example nodes
-        $example_header_nodes = $this->xpath->query("/html/body/div/div/div/div/div/main/article/div/div/div/h2[text()='Examples of ']");
-        foreach ($example_header_nodes as $example_header)
+        if ($this->xpath_query_contains("div/div/h2", "Examples of", $div_node))
         {
-            if (isset($word_array[$word_count]))
+            // example nodes
+            $example_nodes = $this->xpath->query("div/div/div/ol/li", $div_node);
+            if ($example_nodes->length)
             {
-                $examples_array = array();
-
-                // example nodes
-                $example_nodes = $this->xpath->query("div/ol/li", $example_header->parentNode);
-                if ($example_nodes->length)
+                foreach ($example_nodes as $example)
                 {
-                    foreach ($example_nodes as $example)
+                    // TODO remove < > from text
+                    $example_text = trim($example->textContent);
+                    if (strlen($example_text) > 0)
                     {
-                        $example_text = trim($example->textContent);
-                        if (strlen($example_text) > 0)
-                        {
-                            $examples_array[] = $example_text;
-                        }
+                        $this->word_array[$this->word_type]["EXAMPLES_ARRAY"][$i] = $example_text;
+                        $i = $i + 1;
                     }
-                    
-                    $word_array[$word_count]["EXAMPLES_ARRAY"] = $examples_array;
                 }
-                
-                $word_count = $word_count + 1;
             }
         }
+    }
+    
+    
+    
+    private function process_div_more_words($div_node)
+    {
+        $i = sizeof($this->word_array[$this->word_type]["MORE_WORDS"]);
+
+        if ($this->xpath_query_contains("div/div/h2", "Related to", $div_node))
+        {
+            // related to nodes
+            $word_link_nodes = $this->xpath->query("div/div/div/div/a", $div_node);
+            foreach ($word_link_nodes as $word_link)
+            {
+                $this->word_array[$this->word_type]["MORE_WORDS"][$i] = trim($word_link->textContent);
+                $i = $i + 1;
+            }
+        }
+
+        // TODO div/div/p/a      
     }
     
     
@@ -400,14 +240,7 @@ extends JentiRequest
         if (count($word_array) > 0)
         {
             $more_words = array();
-            
-            // related to word
-            $word_link_nodes = $this->xpath->query("/html/body/div/div/div/div/div/main/article/div/div/div/div/div/a");
-            foreach ($word_link_nodes as $word_link)
-            {
-                $more_words[] = trim($word_link->textContent);
-            }
-            
+                        
             // similar terms
             $word_link_nodes = $this->xpath->query("/html/body/div/div/div/div/div/main/article/div/div/div/div/p/a");
             foreach ($word_link_nodes as $word_link)
@@ -417,6 +250,23 @@ extends JentiRequest
             
             $word_array[0]["MORE_WORDS"] = $more_words;
         }
+    }
+    
+    
+    
+    private function xpath_query_contains($path, $value, $context_node)
+    {
+        $nodes = $this->xpath->query($path, $context_node);
+        foreach ($nodes as $node)
+        {
+            $text = $node->textContent;
+            if (strpos(strtolower($text), strtolower($value)) !== FALSE)
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
         
 
