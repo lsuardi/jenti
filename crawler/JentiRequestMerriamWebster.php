@@ -57,6 +57,7 @@ extends JentiRequest
     {
         $this->word = $word;
         $this->word_array = array();
+        $this->word_type = null;
 
         $div_nodes = $this->xpath->query('/html/body/div/div/div/div/div/main/article/div');
         if ($div_nodes->length)
@@ -74,33 +75,35 @@ extends JentiRequest
                     }
 
                     // noun, verb, adjective
-                    $this->word_type = $type_em_nodes->item(0)->textContent;
-                    if ((array_search($this->word_type, $this->type_array) !== FALSE)
-                            && !isset($this->word_array[$this->word_type]))
+                    $word_type = $type_em_nodes->item(0)->textContent;
+                    if ((array_search($word_type, $this->type_array) !== FALSE)
+                            && !isset($this->word_array[$word_type]))
                     {
-                        $this->word_array[$this->word_type]["WORD"] = $word;
-                        $this->word_array[$this->word_type]["TYPE"] = $this->word_type;
-                        $this->word_array[$this->word_type]["LANGUAGE_CODE"] = $this->language_code;
-                        $this->word_array[$this->word_type]["DEFINITION_ARRAY"] = array();
-                        $this->word_array[$this->word_type]["EXAMPLES_ARRAY"] = array();
-                        $this->word_array[$this->word_type]["MORE_WORDS"] = array();
+                        $this->word_type = $word_type;
+                        
+                        $this->word_array[$word_type]["WORD"] = $word;
+                        $this->word_array[$word_type]["TYPE"] = $word_type;
+                        $this->word_array[$word_type]["LANGUAGE_CODE"] = $this->language_code;
+                        $this->word_array[$word_type]["DEFINITION_ARRAY"] = array();
+                        $this->word_array[$word_type]["EXAMPLES_ARRAY"] = array();
+                        $this->word_array[$word_type]["MORE_WORDS"] = array();
 
-                        echo "<BR>type {$this->word_type}<BR>";
+                        //echo "<BR>type {$this->word_type}<BR>";
                         
                         $this->process_div_definitions($div);
                     }
                 }
-                else
+                else if (array_search($this->word_type, $this->type_array) !== FALSE)
                 {
-                    // look for more definition div
+                    // look into div with no word type
                     $this->process_div_definitions($div);
                     $this->process_div_examples($div);
                     $this->process_div_more_words($div);
                 }
                                 
-                echo "<BR>div node<BR>";
-                $this->debug_echo_dom($div, 0, null, null);
-                echo "<BR>";
+                //echo "<BR>div node<BR>";
+                //$this->debug_echo_dom($div, 0, null, null);
+                //echo "<BR>";
             }
         }
 

@@ -3,12 +3,16 @@
 require_once "../JentiConfig.php";
 require_once "../crawler/JentiRequestMerriamWebster.php";
 
+ini_set('display_errors', true);
+ini_set('display_startup_errors', true);
+ini_set('error_reporting', E_ALL);
+
 $config["debug"] = 0;
 $config["cache_on"] = true;
 $config["wait"] = 0;
 
 $request = new JentiRequestMerriamWebster($config);
-$result = $request->get_word("walk");
+$result = $request->get_word("self");
 if ($request->error)
 {
     echo("<BR><BR>".$request->error);
